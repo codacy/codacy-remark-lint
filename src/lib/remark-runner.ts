@@ -2,7 +2,7 @@ import extensions from 'markdown-extensions';
 import remark from 'remark';
 import engine from 'unified-engine';
 import { VFile } from 'vfile';
-import { VFileMessage } from 'vfile-message'
+import { VFileMessage } from 'vfile-message';
 import configFromCodacy, {
   Configuration,
   EmptyConfiguration
@@ -118,7 +118,7 @@ function getCodacyIssues(
   const fileCodacyIssues = results.map((fileResults: VFile) => {
     const { path, messages } = fileResults;
     if(path === undefined) {
-      throw "path must be defined";
+      throw Error("path must be defined");
     }
     return messages.map((message: VFileMessage) =>
       getCodacyIssue(path, message)
