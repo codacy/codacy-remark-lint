@@ -682,14 +682,6 @@
     "@types/node" "*"
     "@types/unist" "*"
 
-"@types/vfile@^2.2.2":
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/@types/vfile/-/vfile-2.2.2.tgz#9bd85b5910128e03c20a3b9af45869926bc77593"
-  integrity sha512-ZaSlFL9qYFw08IuVfJaNTIlEw71q0KYCVZfkMlY+ubI7ZrU4P+DGI4OnrmxiDHzBFyx/CYdYguZLu2QaJg7UJA==
-  dependencies:
-    "@types/node" "*"
-    "@types/unist" "*"
-
 "@types/vfile@^3.0.0":
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/@types/vfile/-/vfile-3.0.2.tgz#19c18cd232df11ce6fa6ad80259bc86c366b09b9"
@@ -698,6 +690,13 @@
     "@types/node" "*"
     "@types/unist" "*"
     "@types/vfile-message" "*"
+
+"@types/vfile@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@types/vfile/-/vfile-4.0.0.tgz#c32d13cbda319bc9f4ab3cacc0263b4ba1dd1ea3"
+  integrity sha512-eleP0/Cz8uVWxARDLi3Axq2+fDdN4ibAXoC6Pv8p6s7znXaUL7XvhgeIhjCiNMnvlLNP+tmCLd+RuCryGgmtEg==
+  dependencies:
+    vfile "*"
 
 JSONStream@^1.0.4:
   version "1.3.5"
@@ -9443,6 +9442,17 @@ vfile-statistics@^1.1.0:
   resolved "https://registry.yarnpkg.com/vfile-statistics/-/vfile-statistics-1.1.3.tgz#e9c87071997fbcb4243764d2c3805e0bb0820c60"
   integrity sha512-CstaK/ebTz1W3Qp41Bt9Lj/2DmumFsCwC2sKahDNSPh0mPh7/UyMLCoU8ZBX34CRU0d61B4W41yIFsV0NKMZeA==
 
+vfile@*, vfile@^4.0.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/vfile/-/vfile-4.1.0.tgz#d79248957f43225d57ff67a56effc67bef08946e"
+  integrity sha512-BaTPalregj++64xbGK6uIlsurN3BCRNM/P2Pg8HezlGzKd1O9PrwIac6bd9Pdx2uTb0QHoioZ+rXKolbVXEgJg==
+  dependencies:
+    "@types/unist" "^2.0.0"
+    is-buffer "^2.0.0"
+    replace-ext "1.0.0"
+    unist-util-stringify-position "^2.0.0"
+    vfile-message "^2.0.0"
+
 vfile@^2.0.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/vfile/-/vfile-2.3.0.tgz#e62d8e72b20e83c324bc6c67278ee272488bf84a"
@@ -9462,17 +9472,6 @@ vfile@^3.0.0:
     replace-ext "1.0.0"
     unist-util-stringify-position "^1.0.0"
     vfile-message "^1.0.0"
-
-vfile@^4.0.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/vfile/-/vfile-4.1.0.tgz#d79248957f43225d57ff67a56effc67bef08946e"
-  integrity sha512-BaTPalregj++64xbGK6uIlsurN3BCRNM/P2Pg8HezlGzKd1O9PrwIac6bd9Pdx2uTb0QHoioZ+rXKolbVXEgJg==
-  dependencies:
-    "@types/unist" "^2.0.0"
-    is-buffer "^2.0.0"
-    replace-ext "1.0.0"
-    unist-util-stringify-position "^2.0.0"
-    vfile-message "^2.0.0"
 
 wcwidth@^1.0.1:
   version "1.0.1"

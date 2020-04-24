@@ -178,7 +178,7 @@
   "devDependencies": {
     "@types/node": "^13.13.2",
     "@types/trim": "^0.1.0",
-    "@types/vfile": "^2.2.2",
+    "@types/vfile": "^4.0.0",
     "ava": "1.0.0-beta.7",
     "codacy-coverage": "^3.0.0",
     "cz-conventional-changelog": "^2.1.0",
