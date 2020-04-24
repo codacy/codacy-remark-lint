@@ -103,9 +103,9 @@ function onError(
   context: object | undefined
 ): AnalysisFailure {
   const message = `Error running processor
-  
+
   ${error.toString()}
-  
+
   code: ${code}
   context: ${context}`;
 
@@ -117,8 +117,8 @@ function getCodacyIssues(
 ): ReadonlyArray<CodacyIssue> {
   const fileCodacyIssues = results.map((fileResults: VFile) => {
     const { path, messages } = fileResults;
-    if(path === undefined) {
-      throw Error("path must be defined");
+    if (path === undefined) {
+      throw Error('path must be defined');
     }
     return messages.map((message: VFileMessage) =>
       getCodacyIssue(path, message)
