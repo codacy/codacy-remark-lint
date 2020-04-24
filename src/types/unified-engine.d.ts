@@ -13,7 +13,7 @@ declare module 'unified-engine' {
   export interface Options {
     processor: Processor;
     cwd?: string;
-    files?: Array<string | VFile<any>>;
+    files?: Array<string | VFile>;
     extensions?: ReadonlyArray<string>;
     rcName?: string;
     ignoreName?: string;
