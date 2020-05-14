@@ -19,7 +19,7 @@
     "no-expression-statement": [
       true,
       {
-        "ignore-prefix": ["console.", "process.exit"]
+        "ignore-prefix": ["console.", "process.exit", "resolve"]
       }
     ],
     "no-if-statement": false

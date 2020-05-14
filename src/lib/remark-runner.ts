@@ -1,6 +1,7 @@
 import extensions from 'markdown-extensions';
 import remark from 'remark';
-import engine from 'unified-engine';
+import { Settings } from 'unified';
+import engine, { CallbackContext } from 'unified-engine';
 import { VFile } from 'vfile';
 import { VFileMessage } from 'vfile-message';
 import configFromCodacy, {
@@ -56,7 +57,6 @@ export default function run(
           ]
         }
       };
-
   return new Promise((resolve, reject) => {
     return engine(
       {
@@ -66,14 +66,15 @@ export default function run(
         files: [...files],
         ignoreName: '.remarkignore',
         out: false,
-        pluginPrefix: 'remark',
         processor: remark(),
         quiet: true,
-        reporter: (results: ReadonlyArray<VFile>) =>
-          resolve(getCodacyIssues(results)),
+        reporter: (vFiles: ReadonlyArray<VFile>, _: Settings) => {
+          resolve(getCodacyIssues(vFiles));
+          return '';
+        },
         silentlyIgnore: true
       },
-      (error, code, context) => {
+      (error: Error | null, code: 0 | 1, context: CallbackContext) => {
         const analysisFailure = callback(error, code, context);
         if (analysisFailure) {
           return reject(analysisFailure);

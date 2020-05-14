@@ -1,4 +1,4 @@
 declare module 'markdown-extensions' {
-  const markdownExtensions: ReadonlyArray<string>;
+  const markdownExtensions: Array<string>;
   export default markdownExtensions;
 }
