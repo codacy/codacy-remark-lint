@@ -1,7 +1,7 @@
 import extensions from 'markdown-extensions';
 import remark from 'remark';
 import { Settings } from 'unified';
-import engine, { CallbackContext } from 'unified-engine';
+import unifiedEngine from 'unified-engine';
 import { VFile } from 'vfile';
 import { VFileMessage } from 'vfile-message';
 import configFromCodacy, {
@@ -58,7 +58,7 @@ export default function run(
         }
       };
   return new Promise((resolve, reject) => {
-    return engine(
+    return unifiedEngine(
       {
         ...configurationSource,
         cwd: sourcePath,
@@ -74,7 +74,11 @@ export default function run(
         },
         silentlyIgnore: true
       },
-      (error: Error | null, code: 0 | 1, context: CallbackContext) => {
+      (
+        error: Error | null,
+        code: 0 | 1,
+        context: unifiedEngine.CallbackContext
+      ) => {
         const analysisFailure = callback(error, code, context);
         if (analysisFailure) {
           return reject(analysisFailure);
