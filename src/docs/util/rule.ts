@@ -83,7 +83,7 @@ function getPackageJsonDescription(filePath: string): string {
 function getDescriptionFromReadme(filePath: string): string {
   const readmePath = path.join(filePath, 'README.md');
   if (fs.existsSync(readmePath)) {
-    const readme = fs.readFileSync(path.join(filePath, 'README.md'));
+    const readme = fs.readFileSync(readmePath);
     const firstNewLine = readme.indexOf('\n');
     const firstTitle = readme.indexOf('\n## ');
     return readme
