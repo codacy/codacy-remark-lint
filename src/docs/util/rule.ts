@@ -55,13 +55,13 @@ function getTitleAndDescription(filePath: string): readonly [string, string] {
 
   const possibleDescription = find(tags, 'fileoverview');
 
-  if(possibleDescription) {
-    const commentDescription = strip(possibleDescription)
-    return [trim(commentDescription).split('\n')[0], commentDescription]
+  if (possibleDescription) {
+    const commentDescription = strip(possibleDescription);
+    return [trim(commentDescription).split('\n')[0], commentDescription];
   }
-
+  // otherwise fallback to readme and package.json
   const description = getDescriptionFromReadme(filePath);
-  const title = getPackageJsonDescription(filePath)
+  const title = getPackageJsonDescription(filePath);
 
   return [title, description];
 }
