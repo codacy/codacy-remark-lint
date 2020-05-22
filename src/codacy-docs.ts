@@ -17,7 +17,6 @@ if (fs.existsSync(docsPath)) {
   fs.removeSync(descripionPath);
 }
 
-fs.mkdirSync(docsPath);
 fs.mkdirSync(descripionPath);
 
 fs.writeFileSync(

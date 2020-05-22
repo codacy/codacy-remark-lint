@@ -1,0 +1,1 @@
+Checks that all titles are followed by 1 blank line, then no blank lines, then two blank lines before the next title

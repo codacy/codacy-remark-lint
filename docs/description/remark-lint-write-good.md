@@ -1,0 +1,1 @@
+A remark-lint rule to check each paragraph using write-good.

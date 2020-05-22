@@ -2,6 +2,16 @@
   "name": "remark-lint",
   "patterns": [
     {
+      "category": "CodeStyle",
+      "level": "Warning",
+      "patternId": "remark-lint-alphabetize-lists"
+    },
+    {
+      "category": "CodeStyle",
+      "level": "Warning",
+      "patternId": "remark-lint-blank-lines-1-0-2"
+    },
+    {
       "parameters": [
         {
           "default": "consistent",
@@ -126,6 +136,11 @@
     {
       "category": "CodeStyle",
       "level": "Warning",
+      "patternId": "remark-lint-heading-whitespace"
+    },
+    {
+      "category": "CodeStyle",
+      "level": "Warning",
       "patternId": "remark-lint-linebreak-style"
     },
     {
@@ -205,6 +220,11 @@
     {
       "category": "CodeStyle",
       "level": "Warning",
+      "patternId": "remark-lint-no-dead-urls"
+    },
+    {
+      "category": "CodeStyle",
+      "level": "Warning",
       "patternId": "remark-lint-no-duplicate-defined-urls"
     },
     {
@@ -226,6 +246,11 @@
       "category": "CodeStyle",
       "level": "Warning",
       "patternId": "remark-lint-no-emphasis-as-heading"
+    },
+    {
+      "category": "CodeStyle",
+      "level": "Warning",
+      "patternId": "remark-lint-no-empty-sections"
     },
     {
       "category": "CodeStyle",
@@ -444,7 +469,12 @@
       "category": "CodeStyle",
       "level": "Warning",
       "patternId": "remark-lint-unordered-list-marker-style"
+    },
+    {
+      "category": "CodeStyle",
+      "level": "Warning",
+      "patternId": "remark-lint-write-good"
     }
   ],
-  "version": "6.0.4"
+  "version": "7.0.0"
 }

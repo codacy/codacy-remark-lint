@@ -1260,6 +1260,11 @@ coleman-liau@^1.0.0:
   resolved "https://registry.yarnpkg.com/coleman-liau/-/coleman-liau-1.0.4.tgz#8ed2b2fc0fa2634deb32de1944ba58d9f9fc78bb"
   integrity sha512-TKPhY4dE9YyC5n35jBrt1kYDFCunwZ0f9rH41OlPeYd9wWgcr6UKvXJlo+OqC6E/b7BBg4FRJdLeFnW1KUfftw==
 
+collapse-white-space@^1.0.0:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/collapse-white-space/-/collapse-white-space-1.0.6.tgz#e63629c0016665792060dbbeb79c42239d2c5287"
+  integrity sha512-jEovNnrhMuqyCcjfEJA56v0Xq8SkIoPKDyaHahwo3POf4qcSXqMYuwNcOTzp74vTsR9Tn08z4MxWqAhcekogkQ==
+
 collapse-white-space@^1.0.2, collapse-white-space@^1.0.4:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/collapse-white-space/-/collapse-white-space-1.0.5.tgz#c2495b699ab1ed380d29a1091e01063e75dbbe3a"
@@ -6355,6 +6360,17 @@ remark-lint-no-dead-urls@^1.0.2:
     unified-lint-rule "^1.0.4"
     unist-util-visit "^2.0.1"
 
+remark-lint-no-duplicate-defined-urls@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/remark-lint-no-duplicate-defined-urls/-/remark-lint-no-duplicate-defined-urls-1.0.0.tgz#b01860cccb1c9f0eb9577be445579718b1017b2a"
+  integrity sha512-/k1ljeMrDUCxcs0XFxYA+5gaRzDeBFhImJduSMtU18plUeCNaLMUHB9YpZcPoePY5EWrFgAHH2JnhKyc0nYJEg==
+  dependencies:
+    unified-lint-rule "^1.0.0"
+    unist-util-generated "^1.0.0"
+    unist-util-position "^3.0.0"
+    unist-util-stringify-position "^2.0.0"
+    unist-util-visit "^2.0.0"
+
 remark-lint-no-duplicate-definitions@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/remark-lint-no-duplicate-definitions/-/remark-lint-no-duplicate-definitions-2.0.0.tgz#5e643440f0cd4390461ebfde8c5f7287a2cd5899"
@@ -6614,6 +6630,26 @@ remark-lint-no-undefined-references@^2.0.0:
   integrity sha512-K4k05pmlMRqEMUDYewitRUx8zM+ntJWbG61dILmL7to7uy0JoSbzuDtz1cxC+kKBKzkulPnyE3WOgRZG8RX2Jg==
   dependencies:
     collapse-white-space "^1.0.4"
+    unified-lint-rule "^1.0.0"
+    unist-util-generated "^1.1.0"
+    unist-util-visit "^2.0.0"
+
+remark-lint-no-unneeded-full-reference-image@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/remark-lint-no-unneeded-full-reference-image/-/remark-lint-no-unneeded-full-reference-image-2.0.0.tgz#ffd84adefe038844bae62e08b0418c569d32c8b7"
+  integrity sha512-mGocJ71Pp5/Jf97RMt4dUcEPnbPJgn/9fvm6FXXMCG9INGNhM5UX252Zr2Al+4L9TQQmZhCt5osBrK34TGBTjw==
+  dependencies:
+    collapse-white-space "^1.0.0"
+    unified-lint-rule "^1.0.0"
+    unist-util-generated "^1.1.0"
+    unist-util-visit "^2.0.0"
+
+remark-lint-no-unneeded-full-reference-link@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/remark-lint-no-unneeded-full-reference-link/-/remark-lint-no-unneeded-full-reference-link-2.0.0.tgz#90118a0a04fc80cd38c9cad769d3050abbfb8f10"
+  integrity sha512-SrFhgShjxUwJmWHVuUvV41ekKEtszzhG+uiy/fKedH+53Ummie8naRYmlfVGVEAgz/wXrFBg4pdr8c3I11H+LA==
+  dependencies:
+    collapse-white-space "^1.0.0"
     unified-lint-rule "^1.0.0"
     unist-util-generated "^1.1.0"
     unist-util-visit "^2.0.0"
@@ -8601,7 +8637,7 @@ unist-util-find-before@^2.0.0:
   dependencies:
     unist-util-is "^3.0.0"
 
-unist-util-generated@^1.1.0, unist-util-generated@^1.1.4:
+unist-util-generated@^1.0.0, unist-util-generated@^1.1.0, unist-util-generated@^1.1.4:
   version "1.1.5"
   resolved "https://registry.yarnpkg.com/unist-util-generated/-/unist-util-generated-1.1.5.tgz#1e903e68467931ebfaea386dae9ea253628acd42"
   integrity sha512-1TC+NxQa4N9pNdayCYA1EGUOCAO0Le3fVp7Jzns6lnua/mYgwHo0tz5WUAfrdpNch1RZLHc61VZ1SDgrtNXLSw==

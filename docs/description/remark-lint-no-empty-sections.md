@@ -1,0 +1,1 @@
+Checks that all markdown titles have a content

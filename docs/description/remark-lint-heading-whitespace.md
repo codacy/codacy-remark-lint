@@ -1,0 +1,1 @@
+Prevents non-breaking spaces from breaking headings

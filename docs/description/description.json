@@ -1,5 +1,17 @@
 [
   {
+    "description": "Checks that all list items are in alphabetical order",
+    "patternId": "remark-lint-alphabetize-lists",
+    "timeToFix": 5,
+    "title": "Checks that all list items are in alphabetical order"
+  },
+  {
+    "description": "Checks that all titles are followed by 1 blank line, then no blank lines, then two blank lines before the next title",
+    "patternId": "remark-lint-blank-lines-1-0-2",
+    "timeToFix": 5,
+    "title": "Checks that all titles are followed by 1 blank line, then no blank lines, then two blank lines before the next title"
+  },
+  {
     "parameters": [
       {
         "description": "remark-lint-blockquote-indentation",
@@ -138,6 +150,12 @@
     "title": "Warn when a heading does not conform to a given style."
   },
   {
+    "description": "Prevents non-breaking spaces from breaking headings",
+    "patternId": "remark-lint-heading-whitespace",
+    "timeToFix": 5,
+    "title": "Prevents non-breaking spaces from breaking headings"
+  },
+  {
     "description": "Warn when linebreaks violate a given or detected style.",
     "patternId": "remark-lint-linebreak-style",
     "timeToFix": 5,
@@ -228,6 +246,12 @@
     "title": "Warn for too many consecutive blank lines."
   },
   {
+    "description": "Ensure that URLs in your Markdown are alive",
+    "patternId": "remark-lint-no-dead-urls",
+    "timeToFix": 5,
+    "title": "Ensure that URLs in your Markdown are alive"
+  },
+  {
     "description": "Warn when definitions define the same URL.",
     "patternId": "remark-lint-no-duplicate-defined-urls",
     "timeToFix": 5,
@@ -256,6 +280,12 @@
     "patternId": "remark-lint-no-emphasis-as-heading",
     "timeToFix": 5,
     "title": "Warn when emphasis (including strong), instead of a heading, introduces"
+  },
+  {
+    "description": "Checks that all markdown titles have a content",
+    "patternId": "remark-lint-no-empty-sections",
+    "timeToFix": 5,
+    "title": "Checks that all markdown titles have a content"
   },
   {
     "description": "Warn for empty URLs in links and images.",
@@ -508,5 +538,11 @@
     "patternId": "remark-lint-unordered-list-marker-style",
     "timeToFix": 5,
     "title": "Warn when the list item marker style of unordered lists violate a given"
+  },
+  {
+    "description": "A remark-lint rule to check each paragraph using write-good.",
+    "patternId": "remark-lint-write-good",
+    "timeToFix": 5,
+    "title": "A remark-lint rule to check each paragraph using write-good."
   }
 ]
