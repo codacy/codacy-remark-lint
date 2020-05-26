@@ -80,7 +80,6 @@ exports.plugins = [
           }
         ],
         require("retext-repeated-words"),
-        require("retext-usage"),
         require("retext-indefinite-article"),
         require("retext-redundant-acronyms"),
         [
