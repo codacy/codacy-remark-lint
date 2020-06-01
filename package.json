@@ -179,7 +179,7 @@
     "vfile": "^4.1.1"
   },
   "devDependencies": {
-    "@types/node": "^14.0.5",
+    "@types/node": "^14.0.6",
     "@types/trim": "^0.1.1",
     "@types/vfile": "^4.0.0",
     "@types/fs-extra": "^9.0.1",
