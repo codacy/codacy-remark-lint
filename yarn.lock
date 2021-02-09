@@ -7281,10 +7281,10 @@ retext-equality@^5.6.0:
     unist-util-is "^4.0.0"
     unist-util-visit "^2.0.0"
 
-retext-indefinite-article@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/retext-indefinite-article/-/retext-indefinite-article-2.0.1.tgz#8a51a2fa05fcefa63783026de4a51365db2c0dfd"
-  integrity sha512-rOaVwz24DHR8v7/RtX8b0ZvSXjw4071YxoLrFWAk54Lx/yB5EKLxVFjQtbeE5IroX+2w+3Uizk68731ra0cNCw==
+retext-indefinite-article@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/retext-indefinite-article/-/retext-indefinite-article-2.0.2.tgz#92308104575b4aae7c9b55c8db9c1797bd1cf1a0"
+  integrity sha512-GnG2OMdJ2uSHx+hDmkrwt+aBVdmV6+OH9OYYrsiq0x22gzUbtYvL8lermfKFNzcDnXT6ajYDyJiD4xvdy2om9Q==
   dependencies:
     format "^0.2.2"
     nlcst-to-string "^2.0.0"
