@@ -207,7 +207,7 @@
     "tslint-config-semistandard": "^8.0.1",
     "tslint-immutable": "^6.0.1",
     "typedoc": "^0.20.16",
-    "typescript": "^3.9.7",
+    "typescript": "^3.9.8",
     "vfile-location": "^3.2.0",
     "vfile-message": "^2.0.4",
     "vfile-reporter": "^6.0.2"
