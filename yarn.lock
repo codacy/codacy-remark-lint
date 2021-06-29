@@ -8652,10 +8652,10 @@ unified-engine@^5.1.0:
     x-is-string "^0.1.0"
     xtend "^4.0.1"
 
-unified-engine@^8.1.0:
-  version "8.1.0"
-  resolved "https://registry.yarnpkg.com/unified-engine/-/unified-engine-8.1.0.tgz#a846e11705fb8589d1250cd27500b56021d8a3e2"
-  integrity sha512-ptXTWUf9HZ2L9xto7tre+hSdSN7M9S0rypUpMAcFhiDYjrXLrND4If+8AZOtPFySKI/Zhfxf7GVAR34BqixDUA==
+unified-engine@^8.2.0:
+  version "8.2.0"
+  resolved "https://registry.yarnpkg.com/unified-engine/-/unified-engine-8.2.0.tgz#217ee94ebaa709395531b9896d0c71e3c3d51350"
+  integrity sha512-ZlMm62ejrf+tJHdyOjQfljszngQjRor95q2XZMGk6rpJUYi7ZIHY/EXEhOcj9PZkMKKdLIM+dqL4s0ceyk9wbA==
   dependencies:
     concat-stream "^2.0.0"
     debug "^4.0.0"
