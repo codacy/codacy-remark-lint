@@ -209,7 +209,7 @@
     "typedoc": "^0.20.36",
     "typescript": "^3.9.10",
     "vfile-location": "^4.0.0",
-    "vfile-message": "^2.0.4",
+    "vfile-message": "^3.0.1",
     "vfile-reporter": "^7.0.0"
   },
   "ava": {
