@@ -210,7 +210,7 @@
     "typescript": "^3.9.10",
     "vfile-location": "^4.0.0",
     "vfile-message": "^2.0.4",
-    "vfile-reporter": "^7.0.0"
+    "vfile-reporter": "^7.0.1"
   },
   "ava": {
     "failFast": true,

@@ -9009,10 +9009,10 @@ vfile-reporter@^6.0.0:
     vfile-sort "^2.1.2"
     vfile-statistics "^1.1.0"
 
-vfile-reporter@^7.0.0:
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/vfile-reporter/-/vfile-reporter-7.0.0.tgz#9b108397494dee7cb41b67c3dfea7478ca1dd98d"
-  integrity sha512-XB5+dmN4O/EpTIt7UrOKlvs2mrutys7fY8hD9jl7jV9V4PPKQKUQlqJlQ+uMwnrv2x/A0ce8pkZiRHVFYSy8ag==
+vfile-reporter@^7.0.1:
+  version "7.0.1"
+  resolved "https://registry.yarnpkg.com/vfile-reporter/-/vfile-reporter-7.0.1.tgz#759bfebb995f3dc8c644284cb88ac4b310ebd168"
+  integrity sha512-pof+cQSJCUNmHG6zoBOJfErb6syIWHWM14CwKjsugCixxl4CZdrgzgxwLBW8lIB6czkzX0Agnnhj33YpKyLvmA==
   dependencies:
     "@types/repeat-string" "^1.0.0"
     "@types/supports-color" "^8.0.0"
