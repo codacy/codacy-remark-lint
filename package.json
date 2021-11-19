@@ -175,7 +175,7 @@
     "retext-syntax-urls": "^2.0.0",
     "retext-usage": "^0.5.0",
     "tmp": "^0.2.1",
-    "unified": "^9.2.1",
+    "unified": "^10.1.1",
     "unified-engine": "^8.2.0",
     "vfile": "^4.2.1",
     "remark-lint-books-links": "2.1.0",
