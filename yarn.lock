@@ -313,6 +313,13 @@
   resolved "https://registry.yarnpkg.com/@types/ms/-/ms-0.7.31.tgz#31b7ca6407128a3d2bbc27fe2d21b345397f6197"
   integrity sha512-iiUgKzV9AuaEkZqkOLDIvlQiL6ltuZd9tGcW3gwpnX8JbuiuhFlEGmmFXEXkN50Cvq7Os88IY2v0dkDqXYWVgA==
 
+"@types/nlcst@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@types/nlcst/-/nlcst-1.0.0.tgz#9dacd7e9a32bcf0451873be62bdc373aed735b46"
+  integrity sha512-3TGCfOcy8R8mMQ4CNSNOe3PG66HttvjcLzCoOpvXvDtfWOTi+uT/rxeOKm/qEwbM4SNe1O/PjdiBK2YcTjU4OQ==
+  dependencies:
+    "@types/unist" "*"
+
 "@types/node@*", "@types/node@^16.3.2":
   version "16.3.2"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-16.3.2.tgz#655432817f83b51ac869c2d51dd8305fb8342e16"
@@ -5392,6 +5399,15 @@ nlcst-is-literal@^1.0.0, nlcst-is-literal@^1.1.0:
   dependencies:
     nlcst-to-string "^2.0.0"
 
+nlcst-is-literal@^2.0.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/nlcst-is-literal/-/nlcst-is-literal-2.1.0.tgz#bb149ffa40a31c0014eeea2da605381ef40f049f"
+  integrity sha512-jaEIXvIreWx4lfkRa+B3toTTxQgDxnECncbEQVSUVfRWxamQFbRHgxyfrt0aMnuoq5AMd3CQHl5SHGGruOUOdQ==
+  dependencies:
+    "@types/nlcst" "^1.0.0"
+    "@types/unist" "^2.0.0"
+    nlcst-to-string "^3.0.0"
+
 nlcst-normalize@^2.0.0, nlcst-normalize@^2.1.0:
   version "2.1.3"
   resolved "https://registry.yarnpkg.com/nlcst-normalize/-/nlcst-normalize-2.1.3.tgz#9aecee8032e7d561eed8767eaf80a0c93bb9840b"
@@ -7685,14 +7701,16 @@ ret@~0.1.10:
   resolved "https://registry.yarnpkg.com/ret/-/ret-0.1.15.tgz#b8a4825d5bdb1fc3f6f53c2bc33f81388681c7bc"
   integrity sha512-TTlYpa+OL+vMMNG24xSlQGEJ3B/RzEfUlLct7b5G/ytav+wPrplCpVMFuwzXbkecJrb6IYo1iFb0S9v37754mg==
 
-retext-contractions@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/retext-contractions/-/retext-contractions-4.0.0.tgz#cef6b7f7949a87e17e073fa7e0f8f9a29db61f74"
-  integrity sha512-0T+QE+mFBfYiZHqD+86yM19PjEN3w6Z2boTWpYZb4L6JyzMN4luHUzNHwaL8HtkbxHEe0j8yqLrYnTD+qoOEyw==
+retext-contractions@^5.2.0:
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/retext-contractions/-/retext-contractions-5.2.0.tgz#7435fdf0268543b7c8e846070a208241929756dc"
+  integrity sha512-G88PLbzHdjTBtgBFlc0Gh2uQPafJ3LpeMaBgKdS+j3hxHEVmlDZeMHRvx/5gRMyxj/QjFH0qifMM94+a/UVy6g==
   dependencies:
-    nlcst-is-literal "^1.0.0"
-    nlcst-to-string "^2.0.0"
-    unist-util-visit "^2.0.0"
+    "@types/nlcst" "^1.0.0"
+    nlcst-is-literal "^2.0.0"
+    nlcst-to-string "^3.0.0"
+    unified "^10.0.0"
+    unist-util-visit "^4.0.0"
 
 retext-diacritics@^3.0.0:
   version "3.0.0"
