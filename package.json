@@ -158,7 +158,7 @@
     "remark-stringify": "^9.0.1",
     "remark-validate-links": "^10.0.4",
     "retext": "^8.0.0",
-    "retext-contractions": "^4.0.0",
+    "retext-contractions": "^5.2.0",
     "retext-diacritics": "^3.0.0",
     "retext-english": "^3.0.4",
     "retext-equality": "^5.7.0",
