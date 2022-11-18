@@ -9587,10 +9587,10 @@ vfile-statistics@^2.0.0:
   dependencies:
     vfile-message "^3.0.0"
 
-vfile@*, vfile@^5.0.0:
-  version "5.0.2"
-  resolved "https://registry.yarnpkg.com/vfile/-/vfile-5.0.2.tgz#57773d1d91478b027632c23afab58ec3590344f0"
-  integrity sha512-5cV+K7tX83MT3bievROc+7AvHv0GXDB0zqbrTjbOe+HRbkzvY4EP+wS3IR77kUBCoWFMdG9py18t0sesPtQ1Rw==
+vfile@*, vfile@^5.0.0, vfile@^5.3.6:
+  version "5.3.6"
+  resolved "https://registry.yarnpkg.com/vfile/-/vfile-5.3.6.tgz#61b2e70690cc835a5d0d0fd135beae74e5a39546"
+  integrity sha512-ADBsmerdGBs2WYckrLBEmuETSPyTD4TuLxTrw0DvjirxW1ra4ZwkbzG8ndsv3Q57smvHxo677MHaQrY9yxH8cA==
   dependencies:
     "@types/unist" "^2.0.0"
     is-buffer "^2.0.0"
@@ -9607,7 +9607,7 @@ vfile@^2.0.0:
     unist-util-stringify-position "^1.0.0"
     vfile-message "^1.0.0"
 
-vfile@^4.0.0, vfile@^4.2.1:
+vfile@^4.0.0:
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/vfile/-/vfile-4.2.1.tgz#03f1dce28fc625c625bc6514350fbdb00fa9e624"
   integrity sha512-O6AE4OskCG5S1emQ/4gl8zK586RqA3srz3nfK/Viy0UPToBc5Trp9BVFb1u0CjsKrAWwnpr4ifM/KBXPWwJbCA==
