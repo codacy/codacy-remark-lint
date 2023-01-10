@@ -313,6 +313,13 @@
   resolved "https://registry.yarnpkg.com/@types/ms/-/ms-0.7.31.tgz#31b7ca6407128a3d2bbc27fe2d21b345397f6197"
   integrity sha512-iiUgKzV9AuaEkZqkOLDIvlQiL6ltuZd9tGcW3gwpnX8JbuiuhFlEGmmFXEXkN50Cvq7Os88IY2v0dkDqXYWVgA==
 
+"@types/nlcst@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@types/nlcst/-/nlcst-1.0.0.tgz#9dacd7e9a32bcf0451873be62bdc373aed735b46"
+  integrity sha512-3TGCfOcy8R8mMQ4CNSNOe3PG66HttvjcLzCoOpvXvDtfWOTi+uT/rxeOKm/qEwbM4SNe1O/PjdiBK2YcTjU4OQ==
+  dependencies:
+    "@types/unist" "*"
+
 "@types/node@*", "@types/node@^16.3.2":
   version "16.3.2"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-16.3.2.tgz#655432817f83b51ac869c2d51dd8305fb8342e16"
@@ -2730,7 +2737,7 @@ form-data@~2.3.2:
     combined-stream "^1.0.6"
     mime-types "^2.1.12"
 
-format@^0.2.2:
+format@^0.2.0, format@^0.2.2:
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/format/-/format-0.2.2.tgz#d6170107e9efdc4ed30c9dc39016df942b5cb58b"
   integrity sha1-1hcBB+nv3E7TDJ3DkBbflCtctYs=
@@ -5592,7 +5599,7 @@ number-is-nan@^1.0.0:
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
   integrity sha1-CXtgK1NCKlIsGvuHkDGDNpQaAR0=
 
-number-to-words@^1.2.3:
+number-to-words@^1.0.0:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/number-to-words/-/number-to-words-1.2.4.tgz#e0f124de9628f8d86c4eeb89bac6c07699264501"
   integrity sha512-/fYevVkXRcyBiZDg6yzZbm0RuaD6i0qRfn8yr+6D0KgBMOndFPxuW10qCHpzs50nN8qKuv78k8MuotZhcVX6Pw==
@@ -7725,16 +7732,17 @@ retext-equality@^5.7.0:
     unist-util-is "^4.0.0"
     unist-util-visit "^2.0.0"
 
-retext-indefinite-article@^2.0.3:
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/retext-indefinite-article/-/retext-indefinite-article-2.0.3.tgz#4b9ff82e33644fda2e9a435c339f873b1a7fc595"
-  integrity sha512-96D1Vk4l7FIf6egKoFVlml32kMmQbKi6FSxQ7YPDsU+F+JnJeLZFCJh9GBQ/LkBKpcyi2izGqYjDgj4DTBz73A==
+retext-indefinite-article@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/retext-indefinite-article/-/retext-indefinite-article-4.2.0.tgz#83803086b29d940bd66a431fc2d0ad05b0b7d678"
+  integrity sha512-qAAqK7tR+aX3kFIHlgO3zojLC9XmcIA96f68ooj8yhVN1iTDbrs0xHnGaBYc/9WCI2F4iyJUH8qZ2CBY2uTxAQ==
   dependencies:
-    format "^0.2.2"
-    nlcst-to-string "^2.0.0"
-    number-to-words "^1.2.3"
-    unist-util-is "^4.0.0"
-    unist-util-visit "^2.0.0"
+    "@types/nlcst" "^1.0.0"
+    format "^0.2.0"
+    nlcst-to-string "^3.0.0"
+    number-to-words "^1.0.0"
+    unified "^10.0.0"
+    unist-util-visit "^4.0.0"
 
 retext-latin@^3.0.0:
   version "3.0.0"
