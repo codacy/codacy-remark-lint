@@ -6,6 +6,18 @@
     "title": "Checks that all list items are in alphabetical order"
   },
   {
+    "description": "Check that the top-level heading matches the directory name",
+    "patternId": "remark-lint-appropriate-heading",
+    "timeToFix": 5,
+    "title": "Check that the top-level heading matches the directory name"
+  },
+  {
+    "description": "This package allows to check either a link points to the existing resource. ",
+    "patternId": "remark-lint-are-links-valid",
+    "timeToFix": 5,
+    "title": "This package allows to check either a link points to the existing resource. "
+  },
+  {
     "description": "Checks that all titles are followed by 1 blank line, then no blank lines, then two blank lines before the next title",
     "patternId": "remark-lint-blank-lines-1-0-2",
     "timeToFix": 5,
@@ -66,6 +78,12 @@
     "title": "Warn when consecutive whitespace is used in a definition."
   },
   {
+    "description": "Only at most one emoji per paragraph.",
+    "patternId": "remark-lint-emoji-limit",
+    "timeToFix": 5,
+    "title": "Only at most one emoji per paragraph."
+  },
+  {
     "parameters": [
       {
         "description": "remark-lint-emphasis-marker",
@@ -82,6 +100,12 @@
     "patternId": "remark-lint-fenced-code-flag",
     "timeToFix": 5,
     "title": "Check fenced code block flags."
+  },
+  {
+    "description": "remark-lint rule to warn when fenced code blocks have an inconsistently-cased language flag",
+    "patternId": "remark-lint-fenced-code-flag-case",
+    "timeToFix": 5,
+    "title": "remark-lint rule to warn when fenced code blocks have an inconsistently-cased language flag"
   },
   {
     "parameters": [
@@ -132,6 +156,12 @@
     "title": "Warn when the first heading has a level other than a specified value."
   },
   {
+    "description": "Validate Markdown frontmatter YAML against an associated JSON schema — remark-lint rule plugin",
+    "patternId": "remark-lint-frontmatter-schema",
+    "timeToFix": 5,
+    "title": "Validate Markdown frontmatter YAML against an associated JSON schema — remark-lint rule plugin"
+  },
+  {
     "description": "Warn when too many spaces are used to create a hard break.",
     "patternId": "remark-lint-hard-break-spaces",
     "timeToFix": 5,
@@ -144,6 +174,12 @@
     "title": "Warn when headings increment with more than 1 level at a time."
   },
   {
+    "description": "A remark-lint rule to check the length of headings.",
+    "patternId": "remark-lint-heading-length",
+    "timeToFix": 5,
+    "title": "A remark-lint rule to check the length of headings."
+  },
+  {
     "description": "Warn when a heading does not conform to a given style.",
     "patternId": "remark-lint-heading-style",
     "timeToFix": 5,
@@ -154,6 +190,12 @@
     "patternId": "remark-lint-heading-whitespace",
     "timeToFix": 5,
     "title": "Prevents non-breaking spaces from breaking headings"
+  },
+  {
+    "description": "remark-lint rule to warn when headings have too many or too few words",
+    "patternId": "remark-lint-heading-word-length",
+    "timeToFix": 5,
+    "title": "remark-lint rule to warn when headings have too many or too few words"
   },
   {
     "description": "Warn when linebreaks violate a given or detected style.",
@@ -204,6 +246,18 @@
     "title": "Warn when list looseness is incorrect, such as being tight when it should"
   },
   {
+    "description": "remark-lint rule to warn when list items violate a given style",
+    "patternId": "remark-lint-list-item-style",
+    "timeToFix": 5,
+    "title": "remark-lint rule to warn when list items violate a given style"
+  },
+  {
+    "description": "remark lint plugin that checks punctuation are used in pair",
+    "patternId": "remark-lint-match-punctuation",
+    "timeToFix": 5,
+    "title": "remark lint plugin that checks punctuation are used in pair"
+  },
+  {
     "parameters": [
       {
         "description": "remark-lint-maximum-heading-length",
@@ -228,6 +282,18 @@
     "title": "Warn when lines are too long."
   },
   {
+    "parameters": [
+      {
+        "description": "remark-lint-mdash-style",
+        "name": "remark-lint-mdash-style"
+      }
+    ],
+    "description": "Warn when the mdash style violate a given style.",
+    "patternId": "remark-lint-mdash-style",
+    "timeToFix": 5,
+    "title": "Warn when the mdash style violate a given style."
+  },
+  {
     "description": "Warn for autolinks without protocol.",
     "patternId": "remark-lint-no-auto-link-without-protocol",
     "timeToFix": 5,
@@ -238,6 +304,12 @@
     "patternId": "remark-lint-no-blockquote-without-marker",
     "timeToFix": 5,
     "title": "Warn when blank lines without `>` (greater than) markers are found in a"
+  },
+  {
+    "description": "remark lint plugin that warn when Chinese punctuation found in numbers.",
+    "patternId": "remark-lint-no-chinese-punctuation-in-number",
+    "timeToFix": 5,
+    "title": "remark lint plugin that warn when Chinese punctuation found in numbers."
   },
   {
     "description": "Warn for too many consecutive blank lines.",
@@ -490,6 +562,18 @@
     "patternId": "remark-lint-rule-style",
     "timeToFix": 5,
     "title": "Warn when the thematic breaks (horizontal rules) violate a given or"
+  },
+  {
+    "description": "remark lint plugin that checks if there are spaces between number and Chinese",
+    "patternId": "remark-lint-spaces-around-number",
+    "timeToFix": 5,
+    "title": "remark lint plugin that checks if there are spaces between number and Chinese"
+  },
+  {
+    "description": "remark lint plugin that checks if there are spaces between English word and Chinese",
+    "patternId": "remark-lint-spaces-around-word",
+    "timeToFix": 5,
+    "title": "remark lint plugin that checks if there are spaces between English word and Chinese"
   },
   {
     "parameters": [

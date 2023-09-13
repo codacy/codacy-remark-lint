@@ -1,4 +1,4 @@
 Warn when phrasing content is padded with spaces between their markers and
-content.
+  content.
 
-Warns for emphasis, strong, delete, image, and link.
+  Warns for emphasis, strong, delete, image, and link.

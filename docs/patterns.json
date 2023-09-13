@@ -3,15 +3,27 @@
   "patterns": [
     {
       "category": "CodeStyle",
+      "enabled": false,
       "level": "Warning",
-      "patternId": "remark-lint-alphabetize-lists",
-      "enabled": false
+      "patternId": "remark-lint-alphabetize-lists"
     },
     {
       "category": "CodeStyle",
+      "enabled": false,
       "level": "Warning",
-      "patternId": "remark-lint-blank-lines-1-0-2",
-      "enabled": false
+      "patternId": "remark-lint-appropriate-heading"
+    },
+    {
+      "category": "CodeStyle",
+      "enabled": false,
+      "level": "Warning",
+      "patternId": "remark-lint-are-links-valid"
+    },
+    {
+      "category": "CodeStyle",
+      "enabled": false,
+      "level": "Warning",
+      "patternId": "remark-lint-blank-lines-1-0-2"
     },
     {
       "parameters": [
@@ -21,9 +33,9 @@
         }
       ],
       "category": "CodeStyle",
+      "enabled": true,
       "level": "Warning",
-      "patternId": "remark-lint-blockquote-indentation",
-      "enabled": true
+      "patternId": "remark-lint-blockquote-indentation"
     },
     {
       "parameters": [
@@ -33,15 +45,15 @@
         }
       ],
       "category": "CodeStyle",
+      "enabled": true,
       "level": "Warning",
-      "patternId": "remark-lint-checkbox-character-style",
-      "enabled": true
+      "patternId": "remark-lint-checkbox-character-style"
     },
     {
       "category": "CodeStyle",
+      "enabled": false,
       "level": "Warning",
-      "patternId": "remark-lint-checkbox-content-indent",
-      "enabled": false
+      "patternId": "remark-lint-checkbox-content-indent"
     },
     {
       "parameters": [
@@ -51,21 +63,27 @@
         }
       ],
       "category": "CodeStyle",
+      "enabled": true,
       "level": "Warning",
-      "patternId": "remark-lint-code-block-style",
-      "enabled": true
+      "patternId": "remark-lint-code-block-style"
     },
     {
       "category": "CodeStyle",
+      "enabled": false,
       "level": "Warning",
-      "patternId": "remark-lint-definition-case",
-      "enabled": false
+      "patternId": "remark-lint-definition-case"
     },
     {
       "category": "CodeStyle",
+      "enabled": false,
       "level": "Warning",
-      "patternId": "remark-lint-definition-spacing",
-      "enabled": false
+      "patternId": "remark-lint-definition-spacing"
+    },
+    {
+      "category": "CodeStyle",
+      "enabled": false,
+      "level": "Warning",
+      "patternId": "remark-lint-emoji-limit"
     },
     {
       "parameters": [
@@ -75,15 +93,21 @@
         }
       ],
       "category": "CodeStyle",
+      "enabled": true,
       "level": "Warning",
-      "patternId": "remark-lint-emphasis-marker",
-      "enabled": true
+      "patternId": "remark-lint-emphasis-marker"
     },
     {
       "category": "CodeStyle",
+      "enabled": false,
       "level": "Warning",
-      "patternId": "remark-lint-fenced-code-flag",
-      "enabled": false
+      "patternId": "remark-lint-fenced-code-flag"
+    },
+    {
+      "category": "CodeStyle",
+      "enabled": false,
+      "level": "Warning",
+      "patternId": "remark-lint-fenced-code-flag-case"
     },
     {
       "parameters": [
@@ -93,9 +117,9 @@
         }
       ],
       "category": "CodeStyle",
+      "enabled": true,
       "level": "Warning",
-      "patternId": "remark-lint-fenced-code-marker",
-      "enabled": true
+      "patternId": "remark-lint-fenced-code-marker"
     },
     {
       "parameters": [
@@ -105,21 +129,21 @@
         }
       ],
       "category": "CodeStyle",
+      "enabled": false,
       "level": "Warning",
-      "patternId": "remark-lint-file-extension",
-      "enabled": false
+      "patternId": "remark-lint-file-extension"
     },
     {
       "category": "CodeStyle",
+      "enabled": false,
       "level": "Warning",
-      "patternId": "remark-lint-final-definition",
-      "enabled": false
+      "patternId": "remark-lint-final-definition"
     },
     {
       "category": "CodeStyle",
+      "enabled": true,
       "level": "Warning",
-      "patternId": "remark-lint-final-newline",
-      "enabled": true
+      "patternId": "remark-lint-final-newline"
     },
     {
       "parameters": [
@@ -129,39 +153,57 @@
         }
       ],
       "category": "CodeStyle",
+      "enabled": false,
       "level": "Warning",
-      "patternId": "remark-lint-first-heading-level",
-      "enabled": false
+      "patternId": "remark-lint-first-heading-level"
     },
     {
       "category": "CodeStyle",
+      "enabled": false,
       "level": "Warning",
-      "patternId": "remark-lint-hard-break-spaces",
-      "enabled": true
+      "patternId": "remark-lint-frontmatter-schema"
     },
     {
       "category": "CodeStyle",
+      "enabled": true,
       "level": "Warning",
-      "patternId": "remark-lint-heading-increment",
-      "enabled": false
+      "patternId": "remark-lint-hard-break-spaces"
     },
     {
       "category": "CodeStyle",
+      "enabled": false,
       "level": "Warning",
-      "patternId": "remark-lint-heading-style",
-      "enabled": true
+      "patternId": "remark-lint-heading-increment"
     },
     {
       "category": "CodeStyle",
+      "enabled": false,
       "level": "Warning",
-      "patternId": "remark-lint-heading-whitespace",
-      "enabled": false
+      "patternId": "remark-lint-heading-length"
     },
     {
       "category": "CodeStyle",
+      "enabled": true,
       "level": "Warning",
-      "patternId": "remark-lint-linebreak-style",
-      "enabled": false
+      "patternId": "remark-lint-heading-style"
+    },
+    {
+      "category": "CodeStyle",
+      "enabled": false,
+      "level": "Warning",
+      "patternId": "remark-lint-heading-whitespace"
+    },
+    {
+      "category": "CodeStyle",
+      "enabled": false,
+      "level": "Warning",
+      "patternId": "remark-lint-heading-word-length"
+    },
+    {
+      "category": "CodeStyle",
+      "enabled": false,
+      "level": "Warning",
+      "patternId": "remark-lint-linebreak-style"
     },
     {
       "parameters": [
@@ -171,21 +213,21 @@
         }
       ],
       "category": "CodeStyle",
+      "enabled": true,
       "level": "Warning",
-      "patternId": "remark-lint-link-title-style",
-      "enabled": true
+      "patternId": "remark-lint-link-title-style"
     },
     {
       "category": "CodeStyle",
+      "enabled": true,
       "level": "Warning",
-      "patternId": "remark-lint-list-item-bullet-indent",
-      "enabled": true
+      "patternId": "remark-lint-list-item-bullet-indent"
     },
     {
       "category": "CodeStyle",
+      "enabled": true,
       "level": "Warning",
-      "patternId": "remark-lint-list-item-content-indent",
-      "enabled": true
+      "patternId": "remark-lint-list-item-content-indent"
     },
     {
       "parameters": [
@@ -195,15 +237,27 @@
         }
       ],
       "category": "CodeStyle",
+      "enabled": true,
       "level": "Warning",
-      "patternId": "remark-lint-list-item-indent",
-      "enabled": true
+      "patternId": "remark-lint-list-item-indent"
     },
     {
       "category": "CodeStyle",
+      "enabled": false,
       "level": "Warning",
-      "patternId": "remark-lint-list-item-spacing",
-      "enabled": false
+      "patternId": "remark-lint-list-item-spacing"
+    },
+    {
+      "category": "CodeStyle",
+      "enabled": false,
+      "level": "Warning",
+      "patternId": "remark-lint-list-item-style"
+    },
+    {
+      "category": "CodeStyle",
+      "enabled": false,
+      "level": "Warning",
+      "patternId": "remark-lint-match-punctuation"
     },
     {
       "parameters": [
@@ -213,9 +267,9 @@
         }
       ],
       "category": "CodeStyle",
+      "enabled": false,
       "level": "Warning",
-      "patternId": "remark-lint-maximum-heading-length",
-      "enabled": false
+      "patternId": "remark-lint-maximum-heading-length"
     },
     {
       "parameters": [
@@ -225,87 +279,105 @@
         }
       ],
       "category": "CodeStyle",
+      "enabled": false,
       "level": "Warning",
-      "patternId": "remark-lint-maximum-line-length",
-      "enabled": false
+      "patternId": "remark-lint-maximum-line-length"
+    },
+    {
+      "parameters": [
+        {
+          "default": "―",
+          "name": "remark-lint-mdash-style"
+        }
+      ],
+      "category": "CodeStyle",
+      "enabled": false,
+      "level": "Warning",
+      "patternId": "remark-lint-mdash-style"
     },
     {
       "category": "CodeStyle",
+      "enabled": true,
       "level": "Warning",
-      "patternId": "remark-lint-no-auto-link-without-protocol",
-      "enabled": true
+      "patternId": "remark-lint-no-auto-link-without-protocol"
     },
     {
       "category": "CodeStyle",
+      "enabled": true,
       "level": "Warning",
-      "patternId": "remark-lint-no-blockquote-without-marker",
-      "enabled": true
+      "patternId": "remark-lint-no-blockquote-without-marker"
     },
     {
       "category": "CodeStyle",
+      "enabled": false,
       "level": "Warning",
-      "patternId": "remark-lint-no-consecutive-blank-lines",
-      "enabled": false
+      "patternId": "remark-lint-no-chinese-punctuation-in-number"
     },
     {
       "category": "CodeStyle",
+      "enabled": false,
       "level": "Warning",
-      "patternId": "remark-lint-no-dead-urls",
-      "enabled": false
+      "patternId": "remark-lint-no-consecutive-blank-lines"
     },
     {
       "category": "CodeStyle",
+      "enabled": false,
       "level": "Warning",
-      "patternId": "remark-lint-no-duplicate-defined-urls",
-      "enabled": false
+      "patternId": "remark-lint-no-dead-urls"
     },
     {
       "category": "CodeStyle",
+      "enabled": false,
       "level": "Warning",
-      "patternId": "remark-lint-no-duplicate-definitions",
-      "enabled": true
+      "patternId": "remark-lint-no-duplicate-defined-urls"
     },
     {
       "category": "CodeStyle",
+      "enabled": true,
       "level": "Warning",
-      "patternId": "remark-lint-no-duplicate-headings",
-      "enabled": false
+      "patternId": "remark-lint-no-duplicate-definitions"
     },
     {
       "category": "CodeStyle",
+      "enabled": false,
       "level": "Warning",
-      "patternId": "remark-lint-no-duplicate-headings-in-section",
-      "enabled": false
+      "patternId": "remark-lint-no-duplicate-headings"
     },
     {
       "category": "CodeStyle",
+      "enabled": false,
       "level": "Warning",
-      "patternId": "remark-lint-no-emphasis-as-heading",
-      "enabled": false
+      "patternId": "remark-lint-no-duplicate-headings-in-section"
     },
     {
       "category": "CodeStyle",
+      "enabled": false,
       "level": "Warning",
-      "patternId": "remark-lint-no-empty-sections",
-      "enabled": false
+      "patternId": "remark-lint-no-emphasis-as-heading"
     },
     {
       "category": "CodeStyle",
+      "enabled": false,
       "level": "Warning",
-      "patternId": "remark-lint-no-empty-url",
-      "enabled": false
+      "patternId": "remark-lint-no-empty-sections"
     },
     {
       "category": "CodeStyle",
+      "enabled": false,
       "level": "Warning",
-      "patternId": "remark-lint-no-file-name-articles",
-      "enabled": false
+      "patternId": "remark-lint-no-empty-url"
     },
     {
       "category": "CodeStyle",
+      "enabled": false,
       "level": "Warning",
-      "patternId": "remark-lint-no-file-name-consecutive-dashes",
-      "enabled": false
+      "patternId": "remark-lint-no-file-name-articles"
+    },
+    {
+      "category": "CodeStyle",
+      "enabled": false,
+      "level": "Warning",
+      "patternId": "remark-lint-no-file-name-consecutive-dashes"
     },
     {
       "parameters": [
@@ -315,39 +387,39 @@
         }
       ],
       "category": "CodeStyle",
+      "enabled": false,
       "level": "Warning",
-      "patternId": "remark-lint-no-file-name-irregular-characters",
-      "enabled": false
+      "patternId": "remark-lint-no-file-name-irregular-characters"
     },
     {
       "category": "CodeStyle",
+      "enabled": false,
       "level": "Warning",
-      "patternId": "remark-lint-no-file-name-mixed-case",
-      "enabled": false
+      "patternId": "remark-lint-no-file-name-mixed-case"
     },
     {
       "category": "CodeStyle",
+      "enabled": false,
       "level": "Warning",
-      "patternId": "remark-lint-no-file-name-outer-dashes",
-      "enabled": false
+      "patternId": "remark-lint-no-file-name-outer-dashes"
     },
     {
       "category": "CodeStyle",
+      "enabled": true,
       "level": "Warning",
-      "patternId": "remark-lint-no-heading-content-indent",
-      "enabled": true
+      "patternId": "remark-lint-no-heading-content-indent"
     },
     {
       "category": "CodeStyle",
+      "enabled": false,
       "level": "Warning",
-      "patternId": "remark-lint-no-heading-indent",
-      "enabled": false
+      "patternId": "remark-lint-no-heading-indent"
     },
     {
       "category": "CodeStyle",
+      "enabled": false,
       "level": "Warning",
-      "patternId": "remark-lint-no-heading-like-paragraph",
-      "enabled": false
+      "patternId": "remark-lint-no-heading-like-paragraph"
     },
     {
       "parameters": [
@@ -357,33 +429,33 @@
         }
       ],
       "category": "CodeStyle",
+      "enabled": false,
       "level": "Warning",
-      "patternId": "remark-lint-no-heading-punctuation",
-      "enabled": false
+      "patternId": "remark-lint-no-heading-punctuation"
     },
     {
       "category": "CodeStyle",
+      "enabled": false,
       "level": "Warning",
-      "patternId": "remark-lint-no-html",
-      "enabled": false
+      "patternId": "remark-lint-no-html"
     },
     {
       "category": "CodeStyle",
+      "enabled": true,
       "level": "Warning",
-      "patternId": "remark-lint-no-inline-padding",
-      "enabled": true
+      "patternId": "remark-lint-no-inline-padding"
     },
     {
       "category": "CodeStyle",
+      "enabled": true,
       "level": "Warning",
-      "patternId": "remark-lint-no-literal-urls",
-      "enabled": true
+      "patternId": "remark-lint-no-literal-urls"
     },
     {
       "category": "CodeStyle",
+      "enabled": false,
       "level": "Warning",
-      "patternId": "remark-lint-no-missing-blank-lines",
-      "enabled": false
+      "patternId": "remark-lint-no-missing-blank-lines"
     },
     {
       "parameters": [
@@ -393,75 +465,75 @@
         }
       ],
       "category": "CodeStyle",
+      "enabled": false,
       "level": "Warning",
-      "patternId": "remark-lint-no-multiple-toplevel-headings",
-      "enabled": false
+      "patternId": "remark-lint-no-multiple-toplevel-headings"
     },
     {
       "category": "CodeStyle",
+      "enabled": false,
       "level": "Warning",
-      "patternId": "remark-lint-no-paragraph-content-indent",
-      "enabled": false
+      "patternId": "remark-lint-no-paragraph-content-indent"
     },
     {
       "category": "CodeStyle",
+      "enabled": false,
       "level": "Warning",
-      "patternId": "remark-lint-no-reference-like-url",
-      "enabled": false
+      "patternId": "remark-lint-no-reference-like-url"
     },
     {
       "category": "CodeStyle",
+      "enabled": false,
       "level": "Warning",
-      "patternId": "remark-lint-no-shell-dollars",
-      "enabled": false
+      "patternId": "remark-lint-no-shell-dollars"
     },
     {
       "category": "CodeStyle",
+      "enabled": true,
       "level": "Warning",
-      "patternId": "remark-lint-no-shortcut-reference-image",
-      "enabled": true
+      "patternId": "remark-lint-no-shortcut-reference-image"
     },
     {
       "category": "CodeStyle",
+      "enabled": true,
       "level": "Warning",
-      "patternId": "remark-lint-no-shortcut-reference-link",
-      "enabled": true
+      "patternId": "remark-lint-no-shortcut-reference-link"
     },
     {
       "category": "CodeStyle",
+      "enabled": false,
       "level": "Warning",
-      "patternId": "remark-lint-no-table-indentation",
-      "enabled": false
+      "patternId": "remark-lint-no-table-indentation"
     },
     {
       "category": "CodeStyle",
+      "enabled": false,
       "level": "Warning",
-      "patternId": "remark-lint-no-tabs",
-      "enabled": false
+      "patternId": "remark-lint-no-tabs"
     },
     {
       "category": "CodeStyle",
+      "enabled": true,
       "level": "Warning",
-      "patternId": "remark-lint-no-undefined-references",
-      "enabled": true
+      "patternId": "remark-lint-no-undefined-references"
     },
     {
       "category": "CodeStyle",
+      "enabled": false,
       "level": "Warning",
-      "patternId": "remark-lint-no-unneeded-full-reference-image",
-      "enabled": false
+      "patternId": "remark-lint-no-unneeded-full-reference-image"
     },
     {
       "category": "CodeStyle",
+      "enabled": false,
       "level": "Warning",
-      "patternId": "remark-lint-no-unneeded-full-reference-link",
-      "enabled": false
+      "patternId": "remark-lint-no-unneeded-full-reference-link"
     },
     {
       "category": "CodeStyle",
+      "enabled": true,
       "level": "Warning",
-      "patternId": "remark-lint-no-unused-definitions",
-      "enabled": true
+      "patternId": "remark-lint-no-unused-definitions"
     },
     {
       "parameters": [
@@ -471,9 +543,9 @@
         }
       ],
       "category": "CodeStyle",
+      "enabled": true,
       "level": "Warning",
-      "patternId": "remark-lint-ordered-list-marker-style",
-      "enabled": true
+      "patternId": "remark-lint-ordered-list-marker-style"
     },
     {
       "parameters": [
@@ -483,15 +555,27 @@
         }
       ],
       "category": "CodeStyle",
+      "enabled": false,
       "level": "Warning",
-      "patternId": "remark-lint-ordered-list-marker-value",
-      "enabled": false
+      "patternId": "remark-lint-ordered-list-marker-value"
     },
     {
       "category": "CodeStyle",
+      "enabled": true,
       "level": "Warning",
-      "patternId": "remark-lint-rule-style",
-      "enabled": true
+      "patternId": "remark-lint-rule-style"
+    },
+    {
+      "category": "CodeStyle",
+      "enabled": false,
+      "level": "Warning",
+      "patternId": "remark-lint-spaces-around-number"
+    },
+    {
+      "category": "CodeStyle",
+      "enabled": false,
+      "level": "Warning",
+      "patternId": "remark-lint-spaces-around-word"
     },
     {
       "parameters": [
@@ -501,9 +585,9 @@
         }
       ],
       "category": "CodeStyle",
+      "enabled": true,
       "level": "Warning",
-      "patternId": "remark-lint-strong-marker",
-      "enabled": true
+      "patternId": "remark-lint-strong-marker"
     },
     {
       "parameters": [
@@ -513,21 +597,21 @@
         }
       ],
       "category": "CodeStyle",
+      "enabled": true,
       "level": "Warning",
-      "patternId": "remark-lint-table-cell-padding",
-      "enabled": true
+      "patternId": "remark-lint-table-cell-padding"
     },
     {
       "category": "CodeStyle",
+      "enabled": false,
       "level": "Warning",
-      "patternId": "remark-lint-table-pipe-alignment",
-      "enabled": false
+      "patternId": "remark-lint-table-pipe-alignment"
     },
     {
       "category": "CodeStyle",
+      "enabled": false,
       "level": "Warning",
-      "patternId": "remark-lint-table-pipes",
-      "enabled": false
+      "patternId": "remark-lint-table-pipes"
     },
     {
       "parameters": [
@@ -537,16 +621,16 @@
         }
       ],
       "category": "CodeStyle",
+      "enabled": false,
       "level": "Warning",
-      "patternId": "remark-lint-unordered-list-marker-style",
-      "enabled": false
+      "patternId": "remark-lint-unordered-list-marker-style"
     },
     {
       "category": "CodeStyle",
+      "enabled": false,
       "level": "Warning",
-      "patternId": "remark-lint-write-good",
-      "enabled": false
+      "patternId": "remark-lint-write-good"
     }
   ],
-  "version": "7.0.1"
+  "version": "9.1.2"
 }
