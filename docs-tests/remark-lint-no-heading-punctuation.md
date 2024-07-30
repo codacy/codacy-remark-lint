@@ -2,17 +2,17 @@
 
 # Hello
 
-<!--#Warn: remark-lint-no-heading-punctuation -->
+<!--#Info: remark-lint-no-heading-punctuation -->
 # Hello:
 
-<!--#Warn: remark-lint-no-heading-punctuation -->
+<!--#Info: remark-lint-no-heading-punctuation -->
 # Hello?
 
-<!--#Warn: remark-lint-no-heading-punctuation -->
+<!--#Info: remark-lint-no-heading-punctuation -->
 # Hello!
 
-<!--#Warn: remark-lint-no-heading-punctuation -->
+<!--#Info: remark-lint-no-heading-punctuation -->
 # Hello,
 
-<!--#Warn: remark-lint-no-heading-punctuation -->
+<!--#Info: remark-lint-no-heading-punctuation -->
 # Hello;

@@ -1,1 +1,15 @@
-{"tools":[{"name":"remark-lint","patterns":[{"patternId":"remark-lint-no-empty-url"}]}],"files":["remark-lint-no-empty-url.md"]}
+{
+    "tools": [
+        {
+            "name": "remark-lint",
+            "patterns": [
+                {
+                    "patternId": "remark-lint-no-empty-url"
+                }
+            ]
+        }
+    ],
+    "files": [
+        "remark-lint-no-empty-url.md"
+    ]
+}
