@@ -68,7 +68,7 @@ function getPatterns(
       ...parameters,
       category: 'CodeStyle',
       enabled: enabledByDefaultPatterns.includes(rule.ruleId),
-      level: 'Warning',
+      level: 'Info',
       patternId: rule.ruleId
     };
   });

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <checkstyle version="1.5">
     <file name="remark-lint-list-item-indent.md">
-        <error source="remark-lint-list-item-indent" line="4" message="[list-item-indent] Incorrect list-item indent: remove 1 space" severity="warning" />
+        <error source="remark-lint-list-item-indent" line="4" message="[list-item-indent] Incorrect list-item indent: remove 1 space" severity="info" />
     </file>
 </checkstyle>

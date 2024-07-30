@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <checkstyle version="1.5">
     <file name="remark-lint-no-empty-url.md">
-        <error source="remark-lint-no-empty-url" line="6" message="[no-empty-url] Don&#x2019;t use links without URL" severity="warning" />
-        <error source="remark-lint-no-empty-url" line="8" message="[no-empty-url] Don&#x2019;t use images without URL" severity="warning" />
+        <error source="remark-lint-no-empty-url" line="6" message="[no-empty-url] Don&#x2019;t use links without URL" severity="info" />
+        <error source="remark-lint-no-empty-url" line="8" message="[no-empty-url] Don&#x2019;t use images without URL" severity="info" />
     </file>
 </checkstyle>
