@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <checkstyle version="1.5">
     <file name="remark-lint-no-duplicate-headings.md">
-        <error source="remark-lint-no-duplicate-headings" line="9" message="[no-duplicate-headings] Do not use headings with similar content (7:1)" severity="warning" />
-        <error source="remark-lint-no-duplicate-headings" line="7" message="[no-duplicate-headings] Do not use headings with similar content (5:1)" severity="warning" />
+        <error source="remark-lint-no-duplicate-headings" line="9" message="[no-duplicate-headings] Do not use headings with similar content (7:1)" severity="info" />
+        <error source="remark-lint-no-duplicate-headings" line="7" message="[no-duplicate-headings] Do not use headings with similar content (5:1)" severity="info" />
     </file>
 </checkstyle>
