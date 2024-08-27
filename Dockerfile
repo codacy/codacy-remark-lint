@@ -1,8 +1,8 @@
-ARG NODE_IMAGE_VERSION=16.10.0-alpine
+ARG NODE_IMAGE_VERSION=20-alpine
 
 FROM node:$NODE_IMAGE_VERSION as build
 
-LABEL maintainer="Rodrigo Fernandes <rodrigo@codacy.com>"
+LABEL maintainer="Codacy <code@codacy.com>"
 
 ENV NODE_PATH /usr/lib/node_modules
 
@@ -19,7 +19,7 @@ RUN yarn run build
 
 FROM node:$NODE_IMAGE_VERSION
 
-LABEL maintainer="Rodrigo Fernandes <rodrigo@codacy.com>"
+LABEL maintainer="Codacy <code@codacy.com>"
 
 ENV NODE_PATH /app/node_modules
 ENV PATH /app/node_modules/.bin:$PATH
