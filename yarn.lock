@@ -6124,7 +6124,7 @@ number-is-nan@^1.0.0:
   resolved "https://registry.npmjs.org/number-is-nan/-/number-is-nan-1.0.1.tgz"
   integrity sha512-4jbtZXNAsfZbAHiiqjLPBiCl16dES1zI4Hpzzxw61Tk+loF+sBDBKx1ICKKKwIqQ7M0mFn1TmkN7euSncWgHiQ==
 
-number-to-words@^1.2.3:
+number-to-words@^1.0.0:
   version "1.2.4"
   resolved "https://registry.npmjs.org/number-to-words/-/number-to-words-1.2.4.tgz"
   integrity sha512-/fYevVkXRcyBiZDg6yzZbm0RuaD6i0qRfn8yr+6D0KgBMOndFPxuW10qCHpzs50nN8qKuv78k8MuotZhcVX6Pw==
@@ -8489,16 +8489,17 @@ retext-equality@^5.7.0:
     unist-util-is "^4.0.0"
     unist-util-visit "^2.0.0"
 
-retext-indefinite-article@^2.0.3:
-  version "2.0.3"
-  resolved "https://registry.npmjs.org/retext-indefinite-article/-/retext-indefinite-article-2.0.3.tgz"
-  integrity sha512-96D1Vk4l7FIf6egKoFVlml32kMmQbKi6FSxQ7YPDsU+F+JnJeLZFCJh9GBQ/LkBKpcyi2izGqYjDgj4DTBz73A==
+retext-indefinite-article@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/retext-indefinite-article/-/retext-indefinite-article-4.2.0.tgz#83803086b29d940bd66a431fc2d0ad05b0b7d678"
+  integrity sha512-qAAqK7tR+aX3kFIHlgO3zojLC9XmcIA96f68ooj8yhVN1iTDbrs0xHnGaBYc/9WCI2F4iyJUH8qZ2CBY2uTxAQ==
   dependencies:
-    format "^0.2.2"
-    nlcst-to-string "^2.0.0"
-    number-to-words "^1.2.3"
-    unist-util-is "^4.0.0"
-    unist-util-visit "^2.0.0"
+    "@types/nlcst" "^1.0.0"
+    format "^0.2.0"
+    nlcst-to-string "^3.0.0"
+    number-to-words "^1.0.0"
+    unified "^10.0.0"
+    unist-util-visit "^4.0.0"
 
 retext-latin@^3.0.0:
   version "3.1.0"
