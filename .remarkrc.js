@@ -29,6 +29,7 @@ exports.plugins = [
   require("remark-preset-lint-consistent"),
   require("remark-preset-lint-recommended"),
   remarkPresetLintMarkdownStyleGuide,
+  [require("remark-footnotes"), { inlineNotes: true }],
   [require("remark-lint-no-dead-urls"), { skipOffline: true }],
   require("remark-lint-heading-whitespace"),
   [require("remark-lint-maximum-line-length"), 120],

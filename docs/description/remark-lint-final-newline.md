@@ -1,44 +1,44 @@
 Warn when a line feed at the end of a file is missing.
-  Empty files are allowed.
+Empty files are allowed.
 
-  See [StackExchange](https://unix.stackexchange.com/questions/18743) for why.
+See [StackExchange](https://unix.stackexchange.com/questions/18743) for why.
 
-  ## Fix
+## Fix
 
-  [`remark-stringify`](https://github.com/remarkjs/remark/tree/HEAD/packages/remark-stringify)
-  always adds a final line feed to files.
+[`remark-stringify`](https://github.com/remarkjs/remark/tree/HEAD/packages/remark-stringify)
+always adds a final line feed to files.
 
-  See [Using remark to fix your Markdown](https://github.com/remarkjs/remark-lint#using-remark-to-fix-your-markdown)
-  on how to automatically fix warnings for this rule.
+See [Using remark to fix your Markdown](https://github.com/remarkjs/remark-lint#using-remark-to-fix-your-markdown)
+on how to automatically fix warnings for this rule.
 
-  ## Example
+## Example
 
-  ##### `ok.md`
+##### `ok.md`
 
-  ###### In
+###### In
 
-  Note: `␊` represents LF.
+Note: `␊` represents LF.
 
-  ```markdown
-  Alpha␊
-  ```
+```markdown
+Alpha␊
+```
 
-  ###### Out
+###### Out
 
-  No messages.
+No messages.
 
-  ##### `not-ok.md`
+##### `not-ok.md`
 
-  ###### In
+###### In
 
-  Note: The below file does not have a final newline.
+Note: The below file does not have a final newline.
 
-  ```markdown
-  Bravo
-  ```
+```markdown
+Bravo
+```
 
-  ###### Out
+###### Out
 
-  ```text
-  1:1: Missing newline character at end of file
-  ```
+```text
+1:1: Missing newline character at end of file
+```
