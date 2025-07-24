@@ -80,7 +80,7 @@ export default function run(
         out: false,
         processor: remark(),
         quiet: true,
-        reporter: (vFiles: ReadonlyArray<VFile>) => {
+        reporter: (vFiles: ReadonlyArray<VFile>, _: unknown) => {
           resolve(getCodacyIssues(vFiles));
           return '';
         },
