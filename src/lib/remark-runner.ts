@@ -1,7 +1,6 @@
 import extensions from 'markdown-extensions';
 import remark from 'remark';
-import { Settings } from 'unified';
-import unifiedEngine from 'unified-engine';
+import { engine } from 'unified-engine';
 import { VFile } from 'vfile';
 import { VFileMessage } from 'vfile-message';
 import configFromCodacy, {
@@ -63,13 +62,15 @@ export default function run(
         defaultConfig: {
           plugins: [
             'remark-preset-lint-recommended',
-            ['remark-lint-list-item-indent', false],
-            ['remark-lint-ordered-list-marker-value', 'ordered']
-          ]
+            [require("remark-footnotes"), { inlineNotes: true }],
+            ['remark-lint-list-item-indent', false] as [string, boolean],
+            ['remark-lint-ordered-list-marker-value', 'ordered'] as [string, string]
+          ] as (string | [string, ...unknown[]])[] // ensure correct type
         }
       };
+
   return new Promise((resolve, reject) => {
-    return unifiedEngine(
+    return engine(
       {
         ...configurationSource,
         cwd: sourcePath,
@@ -79,7 +80,7 @@ export default function run(
         out: false,
         processor: remark(),
         quiet: true,
-        reporter: (vFiles: ReadonlyArray<VFile>, _: Settings) => {
+        reporter: (vFiles: ReadonlyArray<VFile>) => {
           resolve(getCodacyIssues(vFiles));
           return '';
         },
@@ -87,8 +88,8 @@ export default function run(
       },
       (
         error: Error | null,
-        code: 0 | 1,
-        context: unifiedEngine.CallbackContext
+        code: 0 | 1 | undefined,
+        context: any
       ) => {
         const analysisFailure = callback(error, code, context);
         if (analysisFailure) {
@@ -153,7 +154,7 @@ function getCodacyIssue(
   } else {
     return {
       file: path,
-      line: msg.location.start.line || msg.line || 1,
+      line: msg.position?.start.line ?? msg.line ?? 1,
       message: `${msg.ruleId ? `[${msg.ruleId}] ` : ''}${msg.reason}`,
       patternId: `${msg.source}-${msg.ruleId}`
     };
