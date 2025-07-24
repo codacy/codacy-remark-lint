@@ -62,7 +62,6 @@ export default function run(
         defaultConfig: {
           plugins: [
             'remark-preset-lint-recommended',
-            [require("remark-footnotes"), { inlineNotes: true }],
             ['remark-lint-list-item-indent', false] as [string, boolean],
             ['remark-lint-ordered-list-marker-value', 'ordered'] as [string, string]
           ] as (string | [string, ...unknown[]])[] // ensure correct type
@@ -137,7 +136,7 @@ function getCodacyIssues(
     if (path === undefined) {
       throw Error('path must be defined');
     }
-    return messages.map((message: VFileMessage) =>
+    return (messages as ReadonlyArray<VFileMessage>).map((message) =>
       getCodacyIssue(path, message)
     );
   });
