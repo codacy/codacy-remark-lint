@@ -1,1 +1,4 @@
-Warn when file names contain initial or final dashes (hyphen-minus, `-`).
+# remark-lint-no-file-name-outer-dashes
+
+
+[`remark-lint`][github-remark-lint] rule to warn when file names start or end with dashes.

@@ -1,3 +1,4 @@
-Warn when shell code is prefixed by `$` (dollar sign) characters.
+# remark-lint-no-shell-dollars
 
-Ignores indented code blocks and fenced code blocks without language flag.
+
+[`remark-lint`][github-remark-lint] rule to warn when every line in shell code is preceded by `$`s.

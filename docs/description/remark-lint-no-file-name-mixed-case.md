@@ -1,1 +1,4 @@
-Warn when file names use mixed case: both upper- and lowercase characters.
+# remark-lint-no-file-name-mixed-case
+
+
+[`remark-lint`][github-remark-lint] rule to warn when file names case is inconsistent.

@@ -1,9 +1,4 @@
-Warn when tables are indented.
+# remark-lint-no-table-indentation
 
-## Fix
 
-[`remark-stringify`](https://github.com/remarkjs/remark/tree/HEAD/packages/remark-stringify)
-removes all unneeded indentation before tables.
-
-See [Using remark to fix your Markdown](https://github.com/remarkjs/remark-lint#using-remark-to-fix-your-markdown)
-on how to automatically fix warnings for this rule.
+[`remark-lint`][github-remark-lint] rule to warn when GFM tables are indented.

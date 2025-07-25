@@ -1,1 +1,5 @@
-Warn when list item checkboxes are followed by too much whitespace.
+# remark-lint-checkbox-content-indent
+
+
+[`remark-lint`][github-remark-lint] rule to warn when GFM tasklist checkboxes are followed by
+more than one space.

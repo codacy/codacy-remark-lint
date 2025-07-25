@@ -16,14 +16,16 @@ test('run integration test for remark-lint-no-empty-url', async (t) => {
   t.deepEqual(results, [
     {
       file: 'remark-lint-no-empty-url.md',
-      line: 8,
-      message: '[no-empty-url] Don’t use links without URL',
+      line: 1,
+      message:
+        '[no-empty-url] Unexpected empty link URL referencing the current document, expected URL',
       patternId: 'remark-lint-no-empty-url'
     },
     {
       file: 'remark-lint-no-empty-url.md',
-      line: 11,
-      message: '[no-empty-url] Don’t use images without URL',
+      line: 1,
+      message:
+        '[no-empty-url] Unexpected empty image URL referencing the current document, expected URL',
       patternId: 'remark-lint-no-empty-url'
     }
   ]);

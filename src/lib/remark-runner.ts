@@ -1,6 +1,7 @@
 import extensions from 'markdown-extensions';
 import remark from 'remark';
-import { engine } from 'unified-engine';
+import { Settings } from 'unified';
+import unifiedEngine from 'unified-engine';
 import { VFile } from 'vfile';
 import { VFileMessage } from 'vfile-message';
 import configFromCodacy, {
@@ -62,14 +63,14 @@ export default function run(
         defaultConfig: {
           plugins: [
             'remark-preset-lint-recommended',
-            ['remark-lint-list-item-indent', false] as [string, boolean],
-            ['remark-lint-ordered-list-marker-value', 'ordered'] as [string, string]
-          ] as (string | [string, ...unknown[]])[] // ensure correct type
+            ['remark-footnotes', { inlineNotes: true }],
+            ['remark-lint-list-item-indent', false],
+            ['remark-lint-ordered-list-marker-value', 'ordered']
+          ]
         }
       };
-
   return new Promise((resolve, reject) => {
-    return engine(
+    return unifiedEngine(
       {
         ...configurationSource,
         cwd: sourcePath,
@@ -79,7 +80,7 @@ export default function run(
         out: false,
         processor: remark(),
         quiet: true,
-        reporter: (vFiles: ReadonlyArray<VFile>, _: unknown) => {
+        reporter: (vFiles: ReadonlyArray<VFile>, _: Settings) => {
           resolve(getCodacyIssues(vFiles));
           return '';
         },
@@ -87,8 +88,8 @@ export default function run(
       },
       (
         error: Error | null,
-        code: 0 | 1 | undefined,
-        context: any
+        code: 0 | 1,
+        context: unifiedEngine.CallbackContext
       ) => {
         const analysisFailure = callback(error, code, context);
         if (analysisFailure) {
@@ -136,7 +137,7 @@ function getCodacyIssues(
     if (path === undefined) {
       throw Error('path must be defined');
     }
-    return (messages as ReadonlyArray<VFileMessage>).map((message) =>
+    return messages.map((message: VFileMessage) =>
       getCodacyIssue(path, message)
     );
   });
@@ -153,7 +154,7 @@ function getCodacyIssue(
   } else {
     return {
       file: path,
-      line: msg.position?.start.line ?? msg.line ?? 1,
+      line: msg.location?.start.line ?? msg.line ?? 1,
       message: `${msg.ruleId ? `[${msg.ruleId}] ` : ''}${msg.reason}`,
       patternId: `${msg.source}-${msg.ruleId}`
     };

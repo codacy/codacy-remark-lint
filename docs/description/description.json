@@ -36,6 +36,12 @@
     "title": "Warn when block quotes are indented too much or too little."
   },
   {
+    "description": "Ensure that your Markdown TOC is correct",
+    "patternId": "remark-lint-check-toc",
+    "timeToFix": 5,
+    "title": "Ensure that your Markdown TOC is correct"
+  },
+  {
     "parameters": [
       {
         "description": "remark-lint-checkbox-character-style",
@@ -48,10 +54,16 @@
     "title": "Warn when list item checkboxes violate a given style."
   },
   {
-    "description": "Warn when list item checkboxes are followed by too much whitespace.",
+    "description": "remark-lint rule to warn when too much whitespace follows list item checkboxes",
     "patternId": "remark-lint-checkbox-content-indent",
     "timeToFix": 5,
-    "title": "Warn when list item checkboxes are followed by too much whitespace."
+    "title": "remark-lint rule to warn when too much whitespace follows list item checkboxes"
+  },
+  {
+    "description": "Ensure that code block inside list doesn't split the list",
+    "patternId": "remark-lint-code-block-split-list",
+    "timeToFix": 5,
+    "title": "Ensure that code block inside list doesn't split the list"
   },
   {
     "parameters": [
@@ -66,16 +78,22 @@
     "title": "Warn when code blocks do not adhere to a given style."
   },
   {
-    "description": "Warn when definition labels are not lowercase.",
-    "patternId": "remark-lint-definition-case",
+    "description": "remark-lint rule to check for accidental bracket and paren mixup for images and links",
+    "patternId": "remark-lint-correct-media-syntax",
     "timeToFix": 5,
-    "title": "Warn when definition labels are not lowercase."
+    "title": "remark-lint rule to check for accidental bracket and paren mixup for images and links"
   },
   {
-    "description": "Warn when consecutive whitespace is used in a definition.",
+    "description": "remark-lint rule to warn when definition labels are not lowercase",
+    "patternId": "remark-lint-definition-case",
+    "timeToFix": 5,
+    "title": "remark-lint rule to warn when definition labels are not lowercase"
+  },
+  {
+    "description": "remark-lint rule to warn when consecutive whitespace is used in a definition",
     "patternId": "remark-lint-definition-spacing",
     "timeToFix": 5,
-    "title": "Warn when consecutive whitespace is used in a definition."
+    "title": "remark-lint rule to warn when consecutive whitespace is used in a definition"
   },
   {
     "description": "Only at most one emoji per paragraph.",
@@ -96,10 +114,10 @@
     "title": "Warn for violating emphasis markers."
   },
   {
-    "description": "Check fenced code block flags.",
+    "description": "remark-lint rule to warn when fenced code blocks occur without language flag",
     "patternId": "remark-lint-fenced-code-flag",
     "timeToFix": 5,
-    "title": "Check fenced code block flags."
+    "title": "remark-lint rule to warn when fenced code blocks occur without language flag"
   },
   {
     "description": "remark-lint rule to warn when fenced code blocks have an inconsistently-cased language flag",
@@ -120,28 +138,22 @@
     "title": "Warn for violating fenced code markers."
   },
   {
-    "parameters": [
-      {
-        "description": "remark-lint-file-extension",
-        "name": "remark-lint-file-extension"
-      }
-    ],
-    "description": "Warn when the file extension differ from the preferred extension.",
+    "description": "remark-lint rule to warn when the file’s extension violates the given style",
     "patternId": "remark-lint-file-extension",
     "timeToFix": 5,
-    "title": "Warn when the file extension differ from the preferred extension."
+    "title": "remark-lint rule to warn when the file’s extension violates the given style"
   },
   {
-    "description": "Warn when definitions are placed somewhere other than at the end of",
+    "description": "remark-lint rule to warn when definitions are not placed at the end of the file",
     "patternId": "remark-lint-final-definition",
     "timeToFix": 5,
-    "title": "Warn when definitions are placed somewhere other than at the end of"
+    "title": "remark-lint rule to warn when definitions are not placed at the end of the file"
   },
   {
-    "description": "Warn when a line feed at the end of a file is missing.",
+    "description": "remark-lint rule to warn when a newline at the end of a file is missing",
     "patternId": "remark-lint-final-newline",
     "timeToFix": 5,
-    "title": "Warn when a line feed at the end of a file is missing."
+    "title": "remark-lint rule to warn when a newline at the end of a file is missing"
   },
   {
     "parameters": [
@@ -162,10 +174,16 @@
     "title": "Validate Markdown frontmatter YAML against an associated JSON schema — remark-lint rule plugin"
   },
   {
-    "description": "Warn when too many spaces are used to create a hard break.",
+    "description": "remark-lint rule to warn when too many spaces are used to create a hard break",
     "patternId": "remark-lint-hard-break-spaces",
     "timeToFix": 5,
-    "title": "Warn when too many spaces are used to create a hard break."
+    "title": "remark-lint rule to warn when too many spaces are used to create a hard break"
+  },
+  {
+    "description": "Ensure that your Markdown headings capitalization is correct",
+    "patternId": "remark-lint-heading-capitalization",
+    "timeToFix": 5,
+    "title": "Ensure that your Markdown headings capitalization is correct"
   },
   {
     "description": "Warn when headings increment with more than 1 level at a time.",
@@ -216,16 +234,16 @@
     "title": "Warn when link and definition titles occur with incorrect quotes."
   },
   {
-    "description": "Warn when list item bullets are indented.",
+    "description": "remark-lint rule to warn when list item bullets are indented",
     "patternId": "remark-lint-list-item-bullet-indent",
     "timeToFix": 5,
-    "title": "Warn when list item bullets are indented."
+    "title": "remark-lint rule to warn when list item bullets are indented"
   },
   {
-    "description": "Warn when the content of a list item has mixed indentation.",
+    "description": "remark-lint rule to warn when the content of a list item has mixed indentation",
     "patternId": "remark-lint-list-item-content-indent",
     "timeToFix": 5,
-    "title": "Warn when the content of a list item has mixed indentation."
+    "title": "remark-lint rule to warn when the content of a list item has mixed indentation"
   },
   {
     "parameters": [
@@ -240,10 +258,10 @@
     "title": "Warn when the spacing between a list item’s bullet and its content violates"
   },
   {
-    "description": "Warn when list looseness is incorrect, such as being tight when it should",
+    "description": "remark-lint rule to warn when list looseness is incorrect",
     "patternId": "remark-lint-list-item-spacing",
     "timeToFix": 5,
-    "title": "Warn when list looseness is incorrect, such as being tight when it should"
+    "title": "remark-lint rule to warn when list looseness is incorrect"
   },
   {
     "description": "remark-lint rule to warn when list items violate a given style",
@@ -294,16 +312,46 @@
     "title": "Warn when the mdash style violate a given style."
   },
   {
+    "description": "remark-lint rule to check mdx jsx attribute order",
+    "patternId": "remark-lint-mdx-jsx-attribute-sort",
+    "timeToFix": 5,
+    "title": "remark-lint rule to check mdx jsx attribute order"
+  },
+  {
+    "description": "remark-lint rule to check mdx jsx quotes",
+    "patternId": "remark-lint-mdx-jsx-no-void-children",
+    "timeToFix": 5,
+    "title": "remark-lint rule to check mdx jsx quotes"
+  },
+  {
+    "description": "remark-lint rule to check that self-closing tags are used when possible",
+    "patternId": "remark-lint-mdx-jsx-self-close",
+    "timeToFix": 5,
+    "title": "remark-lint rule to check that self-closing tags are used when possible"
+  },
+  {
+    "description": "remark-lint rule to check that shorthand attributes are used in MDX JSX",
+    "patternId": "remark-lint-mdx-jsx-shorthand-attribute",
+    "timeToFix": 5,
+    "title": "remark-lint rule to check that shorthand attributes are used in MDX JSX"
+  },
+  {
+    "description": "remark-lint rule to check that mdx jsx attributes are unique",
+    "patternId": "remark-lint-mdx-jsx-unique-attribute-name",
+    "timeToFix": 5,
+    "title": "remark-lint rule to check that mdx jsx attributes are unique"
+  },
+  {
     "description": "Warn for autolinks without protocol.",
     "patternId": "remark-lint-no-auto-link-without-protocol",
     "timeToFix": 5,
     "title": "Warn for autolinks without protocol."
   },
   {
-    "description": "Warn when blank lines without `>` (greater than) markers are found in a",
+    "description": "remark-lint rule to warn when block quotes have blank lines without markers",
     "patternId": "remark-lint-no-blockquote-without-marker",
     "timeToFix": 5,
-    "title": "Warn when blank lines without `>` (greater than) markers are found in a"
+    "title": "remark-lint rule to warn when block quotes have blank lines without markers"
   },
   {
     "description": "remark lint plugin that warn when Chinese punctuation found in numbers.",
@@ -312,34 +360,34 @@
     "title": "remark lint plugin that warn when Chinese punctuation found in numbers."
   },
   {
-    "description": "Warn for too many consecutive blank lines.",
+    "description": "remark-lint rule to warn for too many consecutive blank lines",
     "patternId": "remark-lint-no-consecutive-blank-lines",
     "timeToFix": 5,
-    "title": "Warn for too many consecutive blank lines."
+    "title": "remark-lint rule to warn for too many consecutive blank lines"
   },
   {
-    "description": "Ensure that URLs in your Markdown are alive",
+    "description": "remark-lint rule to warn when URLs are dead",
     "patternId": "remark-lint-no-dead-urls",
     "timeToFix": 5,
-    "title": "Ensure that URLs in your Markdown are alive"
+    "title": "remark-lint rule to warn when URLs are dead"
   },
   {
-    "description": "Warn when definitions define the same URL.",
+    "description": "remark-lint rule to warn on definitions that define the same urls",
     "patternId": "remark-lint-no-duplicate-defined-urls",
     "timeToFix": 5,
-    "title": "Warn when definitions define the same URL."
+    "title": "remark-lint rule to warn on definitions that define the same urls"
   },
   {
-    "description": "Warn when duplicate definitions are found.",
+    "description": "remark-lint rule to warn on duplicate definitions",
     "patternId": "remark-lint-no-duplicate-definitions",
     "timeToFix": 5,
-    "title": "Warn when duplicate definitions are found."
+    "title": "remark-lint rule to warn on duplicate definitions"
   },
   {
-    "description": "Warn when duplicate headings are found.",
+    "description": "remark-lint rule to warn on duplicate headings",
     "patternId": "remark-lint-no-duplicate-headings",
     "timeToFix": 5,
-    "title": "Warn when duplicate headings are found."
+    "title": "remark-lint rule to warn on duplicate headings"
   },
   {
     "description": "Warn when duplicate headings are found, but only when on the same level,",
@@ -348,10 +396,10 @@
     "title": "Warn when duplicate headings are found, but only when on the same level,"
   },
   {
-    "description": "Warn when emphasis (including strong), instead of a heading, introduces",
+    "description": "remark-lint rule to warn when emphasis or importance is used instead of a heading",
     "patternId": "remark-lint-no-emphasis-as-heading",
     "timeToFix": 5,
-    "title": "Warn when emphasis (including strong), instead of a heading, introduces"
+    "title": "remark-lint rule to warn when emphasis or importance is used instead of a heading"
   },
   {
     "description": "Checks that all markdown titles have a content",
@@ -360,94 +408,86 @@
     "title": "Checks that all markdown titles have a content"
   },
   {
-    "description": "Warn for empty URLs in links and images.",
+    "description": "remark-lint rule to warn on empty URLs in links and images",
     "patternId": "remark-lint-no-empty-url",
     "timeToFix": 5,
-    "title": "Warn for empty URLs in links and images."
+    "title": "remark-lint rule to warn on empty URLs in links and images"
   },
   {
-    "description": "Warn when file names start with an article.",
+    "description": "remark-lint rule to warn when file name start with an article",
     "patternId": "remark-lint-no-file-name-articles",
     "timeToFix": 5,
-    "title": "Warn when file names start with an article."
+    "title": "remark-lint rule to warn when file name start with an article"
   },
   {
-    "description": "Warn when file names contain consecutive dashes.",
+    "description": "remark-lint rule to warn when file names contain consecutive dashes",
     "patternId": "remark-lint-no-file-name-consecutive-dashes",
     "timeToFix": 5,
-    "title": "Warn when file names contain consecutive dashes."
+    "title": "remark-lint rule to warn when file names contain consecutive dashes"
   },
   {
-    "parameters": [
-      {
-        "description": "remark-lint-no-file-name-irregular-characters",
-        "name": "remark-lint-no-file-name-irregular-characters"
-      }
-    ],
-    "description": "Warn when file names contain irregular characters: characters other than",
+    "description": "remark-lint rule to warn when file names contain irregular characters",
     "patternId": "remark-lint-no-file-name-irregular-characters",
     "timeToFix": 5,
-    "title": "Warn when file names contain irregular characters: characters other than"
+    "title": "remark-lint rule to warn when file names contain irregular characters"
   },
   {
-    "description": "Warn when file names use mixed case: both upper- and lowercase characters.",
+    "description": "remark-lint rule to warn when file names use mixed case",
     "patternId": "remark-lint-no-file-name-mixed-case",
     "timeToFix": 5,
-    "title": "Warn when file names use mixed case: both upper- and lowercase characters."
+    "title": "remark-lint rule to warn when file names use mixed case"
   },
   {
-    "description": "Warn when file names contain initial or final dashes (hyphen-minus, `-`).",
+    "description": "remark-lint rule to warn when file names contain initial or final dashes",
     "patternId": "remark-lint-no-file-name-outer-dashes",
     "timeToFix": 5,
-    "title": "Warn when file names contain initial or final dashes (hyphen-minus, `-`)."
+    "title": "remark-lint rule to warn when file names contain initial or final dashes"
   },
   {
-    "description": "Warn when content of headings is indented.",
+    "description": "remark-lint rule to warn when heading content is indented",
     "patternId": "remark-lint-no-heading-content-indent",
     "timeToFix": 5,
-    "title": "Warn when content of headings is indented."
+    "title": "remark-lint rule to warn when heading content is indented"
   },
   {
-    "description": "Warn when a heading is indented.",
+    "description": "remark-lint rule to warn when headings are indented",
     "patternId": "remark-lint-no-heading-indent",
     "timeToFix": 5,
-    "title": "Warn when a heading is indented."
+    "title": "remark-lint rule to warn when headings are indented"
   },
   {
-    "description": "Warn for h7+ “headings”.",
+    "description": "remark-lint rule to for too many hashes (h7+ “headings”)",
     "patternId": "remark-lint-no-heading-like-paragraph",
     "timeToFix": 5,
-    "title": "Warn for h7+ “headings”."
+    "title": "remark-lint rule to for too many hashes (h7+ “headings”)"
   },
   {
-    "parameters": [
-      {
-        "description": "remark-lint-no-heading-punctuation",
-        "name": "remark-lint-no-heading-punctuation"
-      }
-    ],
-    "description": "Warn when a heading ends with a group of characters.",
+    "description": "remark-lint rule to warn when headings end in illegal characters",
     "patternId": "remark-lint-no-heading-punctuation",
     "timeToFix": 5,
-    "title": "Warn when a heading ends with a group of characters."
+    "title": "remark-lint rule to warn when headings end in illegal characters"
   },
   {
-    "description": "Warn when HTML nodes are used.",
+    "description": "remark-lint rule to check superfluous table cells",
+    "patternId": "remark-lint-no-hidden-table-cell",
+    "timeToFix": 5,
+    "title": "remark-lint rule to check superfluous table cells"
+  },
+  {
+    "description": "remark-lint rule to warn when HTML nodes are used",
     "patternId": "remark-lint-no-html",
     "timeToFix": 5,
-    "title": "Warn when HTML nodes are used."
+    "title": "remark-lint rule to warn when HTML nodes are used"
   },
   {
-    "description": "Warn when phrasing content is padded with spaces between their markers and",
     "patternId": "remark-lint-no-inline-padding",
-    "timeToFix": 5,
-    "title": "Warn when phrasing content is padded with spaces between their markers and"
+    "timeToFix": 5
   },
   {
-    "description": "Warn for literal URLs in text.",
+    "description": "remark-lint rule to warn when URLs without angle brackets are used",
     "patternId": "remark-lint-no-literal-urls",
     "timeToFix": 5,
-    "title": "Warn for literal URLs in text."
+    "title": "remark-lint rule to warn when URLs without angle brackets are used"
   },
   {
     "description": "Warn when missing blank lines before block content (and frontmatter",
@@ -468,46 +508,46 @@
     "title": "Warn when multiple top level headings are used."
   },
   {
-    "description": "Warn when the content in paragraphs is indented.",
+    "description": "remark-lint rule to warn when the content in paragraphs are indented",
     "patternId": "remark-lint-no-paragraph-content-indent",
     "timeToFix": 5,
-    "title": "Warn when the content in paragraphs is indented."
+    "title": "remark-lint rule to warn when the content in paragraphs are indented"
   },
   {
-    "description": "Warn when URLs are also defined identifiers.",
+    "description": "remark-lint rule to warn when URLs are also defined identifiers",
     "patternId": "remark-lint-no-reference-like-url",
     "timeToFix": 5,
-    "title": "Warn when URLs are also defined identifiers."
+    "title": "remark-lint rule to warn when URLs are also defined identifiers"
   },
   {
-    "description": "Warn when shell code is prefixed by `$` (dollar sign) characters.",
+    "description": "remark-lint rule to warn when shell code is prefixed by dollars",
     "patternId": "remark-lint-no-shell-dollars",
     "timeToFix": 5,
-    "title": "Warn when shell code is prefixed by `$` (dollar sign) characters."
+    "title": "remark-lint rule to warn when shell code is prefixed by dollars"
   },
   {
-    "description": "Warn when shortcut reference images are used.",
+    "description": "remark-lint rule to warn when shortcut reference images are used",
     "patternId": "remark-lint-no-shortcut-reference-image",
     "timeToFix": 5,
-    "title": "Warn when shortcut reference images are used."
+    "title": "remark-lint rule to warn when shortcut reference images are used"
   },
   {
-    "description": "Warn when shortcut reference links are used.",
+    "description": "remark-lint rule to warn when shortcut reference links are used",
     "patternId": "remark-lint-no-shortcut-reference-link",
     "timeToFix": 5,
-    "title": "Warn when shortcut reference links are used."
+    "title": "remark-lint rule to warn when shortcut reference links are used"
   },
   {
-    "description": "Warn when tables are indented.",
+    "description": "remark-lint rule to warn when tables are indented",
     "patternId": "remark-lint-no-table-indentation",
     "timeToFix": 5,
-    "title": "Warn when tables are indented."
+    "title": "remark-lint rule to warn when tables are indented"
   },
   {
-    "description": "Warn when hard tabs (`\\t`) are used instead of spaces.",
+    "description": "remark-lint rule to warn when hard tabs are used instead of spaces",
     "patternId": "remark-lint-no-tabs",
     "timeToFix": 5,
-    "title": "Warn when hard tabs (`\\t`) are used instead of spaces."
+    "title": "remark-lint rule to warn when hard tabs are used instead of spaces"
   },
   {
     "description": "Warn when references to undefined definitions are found.",
@@ -516,22 +556,22 @@
     "title": "Warn when references to undefined definitions are found."
   },
   {
-    "description": "Warn when full reference images are used that could be collapsed.",
+    "description": "remark-lint rule to check that full reference images can be collapsed",
     "patternId": "remark-lint-no-unneeded-full-reference-image",
     "timeToFix": 5,
-    "title": "Warn when full reference images are used that could be collapsed."
+    "title": "remark-lint rule to check that full reference images can be collapsed"
   },
   {
-    "description": "Warn when full reference links are used that could be collapsed.",
+    "description": "remark-lint rule to check that full reference links can be collapsed",
     "patternId": "remark-lint-no-unneeded-full-reference-link",
     "timeToFix": 5,
-    "title": "Warn when full reference links are used that could be collapsed."
+    "title": "remark-lint rule to check that full reference links can be collapsed"
   },
   {
-    "description": "Warn when unused definitions are found.",
+    "description": "remark-lint rule to warn when unused definitions are found",
     "patternId": "remark-lint-no-unused-definitions",
     "timeToFix": 5,
-    "title": "Warn when unused definitions are found."
+    "title": "remark-lint rule to warn when unused definitions are found"
   },
   {
     "parameters": [
@@ -558,10 +598,10 @@
     "title": "Warn when the list item marker values of ordered lists violate a given"
   },
   {
-    "description": "Warn when the thematic breaks (horizontal rules) violate a given or",
+    "description": "remark-lint rule to warn when horizontal rules violate a given style",
     "patternId": "remark-lint-rule-style",
     "timeToFix": 5,
-    "title": "Warn when the thematic breaks (horizontal rules) violate a given or"
+    "title": "remark-lint rule to warn when horizontal rules violate a given style"
   },
   {
     "description": "remark lint plugin that checks if there are spaces between number and Chinese",
@@ -606,10 +646,10 @@
     "title": "Warn when table pipes are not aligned."
   },
   {
-    "description": "Warn when table rows are not fenced with pipes.",
+    "description": "remark-lint rule to warn when table rows are not fenced with pipes",
     "patternId": "remark-lint-table-pipes",
     "timeToFix": 5,
-    "title": "Warn when table rows are not fenced with pipes."
+    "title": "remark-lint rule to warn when table rows are not fenced with pipes"
   },
   {
     "parameters": [

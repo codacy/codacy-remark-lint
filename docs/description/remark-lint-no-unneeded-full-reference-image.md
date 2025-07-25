@@ -1,5 +1,4 @@
-Warn when full reference images are used that could be collapsed.
+# remark-lint-no-unneeded-full-reference-image
 
-Full references (such as `[Remark][remark]`) can also be written as a
-collapsed reference (`[Remark][]`) if normalising the reference text yields
-the label.
+
+[`remark-lint`][github-remark-lint] rule to warn when unneeded full reference images are used.
