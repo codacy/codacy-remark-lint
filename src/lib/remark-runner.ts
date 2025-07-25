@@ -154,7 +154,7 @@ function getCodacyIssue(
   } else {
     return {
       file: path,
-      line: msg.location?.start.line ?? msg.line ?? 1,
+      line: msg.location.start.line || msg.line || 1,
       message: `${msg.ruleId ? `[${msg.ruleId}] ` : ''}${msg.reason}`,
       patternId: `${msg.source}-${msg.ruleId}`
     };
