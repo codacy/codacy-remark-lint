@@ -1,4 +1,4 @@
-ARG NODE_IMAGE_VERSION=20-alpine
+ARG NODE_IMAGE_VERSION=24-alpine
 
 FROM node:$NODE_IMAGE_VERSION as build
 
@@ -29,8 +29,8 @@ RUN adduser -u 2004 -D docker
 COPY --from=build --chown=docker:docker /workdir/build/main /app/build/main
 COPY --from=build --chown=docker:docker /workdir/package.json /app/package.json
 COPY --from=build --chown=docker:docker /workdir/yarn.lock /app/yarn.lock
-COPY --from=build --chown=docker:docker /workdir/docs /docs
-COPY --from=build --chown=docker:docker /workdir/docs-tests /docs/tests
+COPY --from=build --chown=docker:docker /workdir/docs /app/docs
+COPY --from=build --chown=docker:docker /workdir/docs-tests /app/docs/tests
 
 WORKDIR /app
 
