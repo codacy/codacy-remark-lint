@@ -18,14 +18,14 @@ test('run integration test for remark-lint-no-empty-url', async (t) => {
       file: 'remark-lint-no-empty-url.md',
       line: 8,
       message:
-        '[no-empty-url] Unexpected empty link URL referencing the current document, expected URL',
+        '[no-empty-url] Don’t use links without URL',
       patternId: 'remark-lint-no-empty-url'
     },
     {
       file: 'remark-lint-no-empty-url.md',
       line: 11,
       message:
-        '[no-empty-url] Unexpected empty image URL referencing the current document, expected URL',
+        '[no-empty-url] Don’t use images without URL',
       patternId: 'remark-lint-no-empty-url'
     }
   ]);
