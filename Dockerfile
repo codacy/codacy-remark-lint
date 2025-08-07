@@ -9,6 +9,7 @@ ENV NODE_PATH /usr/lib/node_modules
 WORKDIR /workdir
 
 COPY package.json .
+
 COPY yarn.lock .
 
 RUN yarn
