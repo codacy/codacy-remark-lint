@@ -464,6 +464,12 @@
       "patternId": "remark-lint-no-heading-like-paragraph"
     },
     {
+      "parameters": [
+        {
+          "default": ".,;:!?",
+          "name": "remark-lint-no-heading-punctuation"
+        }
+      ],
       "category": "CodeStyle",
       "enabled": false,
       "level": "Info",
