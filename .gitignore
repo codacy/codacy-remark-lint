@@ -10,3 +10,10 @@ coverage
 
 package-lock.json
 yarn-error.log
+
+
+#Ignore vscode AI rules
+.github/copilot-instructions.md
+
+.vscode/
+.codacy/

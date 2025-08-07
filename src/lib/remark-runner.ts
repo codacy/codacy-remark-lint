@@ -63,6 +63,7 @@ export default function run(
         defaultConfig: {
           plugins: [
             'remark-preset-lint-recommended',
+            ['remark-footnotes', { inlineNotes: true }],
             ['remark-lint-list-item-indent', false],
             ['remark-lint-ordered-list-marker-value', 'ordered']
           ]

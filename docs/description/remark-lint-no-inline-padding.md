@@ -1,4 +1,3 @@
-Warn when phrasing content is padded with spaces between their markers and
-  content.
-
-  Warns for emphasis, strong, delete, image, and link.
+Deprecated: this package is no longer maintained.
+With CommonMark,
+you can’t have padding in emphasis and strong anymore.

@@ -13,15 +13,15 @@ const defaults = remarkPresetLintRecommended();
 
 const root = path.resolve(__dirname);
 const docsPath = path.resolve(`${root}/../../docs`);
-const descripionPath = path.resolve(`${docsPath}/description`);
+const descriptionPath = path.resolve(`${docsPath}/description`);
 
 const allRules = getAllRules();
 
 if (fs.existsSync(docsPath)) {
-  fs.removeSync(descripionPath);
+  fs.removeSync(descriptionPath);
 }
 
-fs.mkdirSync(descripionPath);
+fs.mkdirSync(descriptionPath);
 
 fs.writeFileSync(
   `${docsPath}/patterns.json`,
@@ -29,12 +29,12 @@ fs.writeFileSync(
 );
 
 fs.writeFileSync(
-  `${descripionPath}/description.json`,
+  `${descriptionPath}/description.json`,
   JSON.stringify(getDescriptions(allRules), null, 2)
 );
 
 allRules.forEach((rule: Rule) => {
-  fs.writeFileSync(`${descripionPath}/${rule.ruleId}.md`, rule.description);
+  fs.writeFileSync(`${descriptionPath}/${rule.ruleId}.md`, rule.description);
 });
 
 fs.writeFileSync(

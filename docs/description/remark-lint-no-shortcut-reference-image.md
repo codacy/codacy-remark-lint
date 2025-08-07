@@ -1,7 +1,4 @@
-Warn when shortcut reference images are used.
+# remark-lint-no-shortcut-reference-image
 
-  Shortcut references render as images when a definition is found, and as
-  plain text without definition.
-  Sometimes, you don’t intend to create an image from the reference, but this
-  rule still warns anyway.
-  In that case, you can escape the reference like so: `!\[foo]`.
+
+[`remark-lint`][github-remark-lint] rule to warn when shortcut reference images are used.

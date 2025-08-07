@@ -1,6 +1,4 @@
-Warn when the file extension differ from the preferred extension.
+# remark-lint-file-extension
 
-  Does not warn when given documents have no file extensions (such as
-  `AUTHORS` or `LICENSE`).
 
-  Options: `string`, default: `'md'` — Expected file extension.
+[`remark-lint`][github-remark-lint] rule to warn for unexpected file extensions.

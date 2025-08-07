@@ -1,4 +1,4 @@
-Warn when HTML nodes are used.
+# remark-lint-no-html
 
-  Ignores comments, because they are used by `remark`, `remark-lint`, other
-  Markdown tools, and because Markdown doesn’t have native comments.
+
+[`remark-lint`][github-remark-lint] rule to warn when HTML is used.

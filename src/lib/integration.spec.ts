@@ -17,13 +17,15 @@ test('run integration test for remark-lint-no-empty-url', async (t) => {
     {
       file: 'remark-lint-no-empty-url.md',
       line: 8,
-      message: '[no-empty-url] Don’t use links without URL',
+      message:
+        '[no-empty-url] Don’t use links without URL',
       patternId: 'remark-lint-no-empty-url'
     },
     {
       file: 'remark-lint-no-empty-url.md',
       line: 11,
-      message: '[no-empty-url] Don’t use images without URL',
+      message:
+        '[no-empty-url] Don’t use images without URL',
       patternId: 'remark-lint-no-empty-url'
     }
   ]);

@@ -1,11 +1,11 @@
 Warn for autolinks without protocol.
-  Autolinks are URLs enclosed in `<` (less than) and `>` (greater than)
-  characters.
+Autolinks are URLs enclosed in `<` (less than) and `>` (greater than)
+characters.
 
-  ## Fix
+## Fix
 
-  [`remark-stringify`](https://github.com/remarkjs/remark/tree/HEAD/packages/remark-stringify)
-  adds a protocol where needed.
+[`remark-stringify`](https://github.com/remarkjs/remark/tree/HEAD/packages/remark-stringify)
+adds a protocol where needed.
 
-  See [Using remark to fix your Markdown](https://github.com/remarkjs/remark-lint#using-remark-to-fix-your-markdown)
-  on how to automatically fix warnings for this rule.
+See [Using remark to fix your Markdown](https://github.com/remarkjs/remark-lint#using-remark-to-fix-your-markdown)
+on how to automatically fix warnings for this rule.

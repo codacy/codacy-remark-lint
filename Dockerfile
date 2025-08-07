@@ -1,4 +1,4 @@
-ARG NODE_IMAGE_VERSION=20-alpine
+ARG NODE_IMAGE_VERSION=24-alpine
 
 FROM node:$NODE_IMAGE_VERSION as build
 
@@ -9,6 +9,7 @@ ENV NODE_PATH /usr/lib/node_modules
 WORKDIR /workdir
 
 COPY package.json .
+
 COPY yarn.lock .
 
 RUN yarn
