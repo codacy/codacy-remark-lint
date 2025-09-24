@@ -384,10 +384,10 @@
     "title": "remark-lint rule to warn on duplicate definitions"
   },
   {
-    "description": "remark-lint rule to warn on duplicate headings",
+    "description": "Warn when duplicate headings are found.",
     "patternId": "remark-lint-no-duplicate-headings",
     "timeToFix": 5,
-    "title": "remark-lint rule to warn on duplicate headings"
+    "title": "Warn when duplicate headings are found."
   },
   {
     "description": "Warn when duplicate headings are found, but only when on the same level,",
@@ -408,10 +408,10 @@
     "title": "Checks that all markdown titles have a content"
   },
   {
-    "description": "remark-lint rule to warn on empty URLs in links and images",
+    "description": "Warn for empty URLs in links and images.",
     "patternId": "remark-lint-no-empty-url",
     "timeToFix": 5,
-    "title": "remark-lint rule to warn on empty URLs in links and images"
+    "title": "Warn for empty URLs in links and images."
   },
   {
     "description": "remark-lint rule to warn when file name start with an article",
@@ -462,10 +462,16 @@
     "title": "remark-lint rule to for too many hashes (h7+ “headings”)"
   },
   {
-    "description": "remark-lint rule to warn when headings end in illegal characters",
+    "parameters": [
+      {
+        "description": "remark-lint-no-heading-punctuation",
+        "name": "remark-lint-no-heading-punctuation"
+      }
+    ],
+    "description": "Warn when a heading ends with a group of characters.",
     "patternId": "remark-lint-no-heading-punctuation",
     "timeToFix": 5,
-    "title": "remark-lint rule to warn when headings end in illegal characters"
+    "title": "Warn when a heading ends with a group of characters."
   },
   {
     "description": "remark-lint rule to check superfluous table cells",
