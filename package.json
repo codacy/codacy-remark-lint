@@ -189,7 +189,7 @@
     "retext-usage": "0.5.0",
     "tmp": "0.2.5",
     "unified": "9.2.1",
-    "unified-engine": "8.2.0",
+    "unified-engine": "11.2.2",
     "vfile": "4.2.1"
   },
   "devDependencies": {
