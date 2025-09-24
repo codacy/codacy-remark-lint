@@ -9,6 +9,8 @@ const defaultPresetRules: ReadonlyArray<string> = [
   'remark-preset-lint-recommended'
 ];
 
+// Will keep here the rules we want to ignore for now (e.g., deprecated, not working, etc)
+
 const ignoredRules: ReadonlyArray<string> = [
   'remark-lint-code',
   'remark-lint-code-eslint',

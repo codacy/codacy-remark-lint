@@ -119,15 +119,12 @@ function onError(
   code: number | undefined,
   context: object | undefined
 ): AnalysisFailure {
-  const message = `Error running processor
-
-  ${error.toString()}
-
-  code: ${code}
-  context: ${context}`;
-
-  return { error, message };
+  return {
+    error,
+    message: `Error running processor\n${error.stack}\ncode: ${code}\ncontext: ${JSON.stringify(context)}`
+  };
 }
+
 
 function getCodacyIssues(
   results: ReadonlyArray<VFile>
