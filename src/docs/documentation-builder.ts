@@ -10,7 +10,15 @@ const defaultPresetRules: ReadonlyArray<string> = [
 ];
 
 // Will keep here the rules we want to ignore for now (e.g., deprecated, not working, etc)
-const ignoredRules: ReadonlyArray<string> = [];
+
+const ignoredRules: ReadonlyArray<string> = [
+  'remark-lint-code',
+  'remark-lint-code-eslint',
+  'remark-lint-no-long-code',
+  'remark-lint-no-repeat-punctuation',
+  'remark-lint-no-url-trailing-slash',
+  'remark-lint-books-links'
+];
 
 export function getAllRules(): ReadonlyArray<Rule> {
   const parsedRules = fs

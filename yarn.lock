@@ -7576,14 +7576,6 @@ remark-lint-code-block-style@2.0.1, remark-lint-code-block-style@^2.0.0:
     unist-util-position "^3.0.0"
     unist-util-visit "^2.0.0"
 
-remark-lint-code@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/remark-lint-code/-/remark-lint-code-2.0.0.tgz#03e0c2e90aeedbe875a8795feacf57988b7d957c"
-  integrity sha512-2U2OAPJM1vm9SGNPFKWQQ7gO85XdF990k7WGQ/GasDq/J0q5euY2PTco3tf1RWmDc/LFDWBM4UC6p3fzuDlkog==
-  dependencies:
-    unified-lint-rule "^1.0.0"
-    unist-util-visit "^1.0.0"
-
 remark-lint-correct-media-syntax@1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/remark-lint-correct-media-syntax/-/remark-lint-correct-media-syntax-1.0.1.tgz#0ffce76839bd5275d57b7edf9ac01fd49a63cc29"
@@ -8186,7 +8178,7 @@ remark-lint-no-duplicate-headings-in-section@2.0.2:
     unist-util-stringify-position "^2.0.0"
     unist-util-visit "^2.0.0"
 
-remark-lint-no-duplicate-headings@2.0.1, remark-lint-no-duplicate-headings@^2.0.0:
+remark-lint-no-duplicate-headings@^2.0.0:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/remark-lint-no-duplicate-headings/-/remark-lint-no-duplicate-headings-2.0.1.tgz#4a4b70e029155ebcfc03d8b2358c427b69a87576"
   integrity sha512-F6AP0FJcHIlkmq0pHX0J5EGvLA9LfhuYTvnNO8y3kvflHeRjFkDyt2foz/taXR8OcLQR51n/jIJiwrrSMbiauw==
@@ -8197,6 +8189,19 @@ remark-lint-no-duplicate-headings@2.0.1, remark-lint-no-duplicate-headings@^2.0.
     unist-util-position "^3.0.0"
     unist-util-stringify-position "^2.0.0"
     unist-util-visit "^2.0.0"
+
+remark-lint-no-duplicate-headings@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/remark-lint-no-duplicate-headings/-/remark-lint-no-duplicate-headings-4.0.1.tgz#ec6184ddad6ad35e67370115f134e1a7ce074c09"
+  integrity sha512-6lggqnpIe5FepikjYF2me3ovKV4oD/rAz8WmwVbLR2cLkce1iH+PB7jyxk/A2gQQqrDcIlRMA5Ct2Yj56cEwhQ==
+  dependencies:
+    "@types/mdast" "^4.0.0"
+    devlop "^1.0.0"
+    mdast-util-mdx "^3.0.0"
+    mdast-util-to-string "^4.0.0"
+    unified-lint-rule "^3.0.0"
+    unist-util-visit-parents "^6.0.0"
+    vfile-message "^4.0.0"
 
 remark-lint-no-emphasis-as-heading@4.0.1:
   version "4.0.1"
@@ -8226,14 +8231,14 @@ remark-lint-no-empty-sections@4.0.0:
     unified-lint-rule "^1.0.0"
     unist-util-visit "^1.0.0"
 
-remark-lint-no-empty-url@2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/remark-lint-no-empty-url/-/remark-lint-no-empty-url-2.0.1.tgz#188c9435724219a1e8c52ed793e24324a994ee05"
-  integrity sha512-CBO5hgxlHWrnBPex0GfKZy6ORe2wkLrrHODVPUpLplDA72cQbDzQKedHGgh76euGDs+jvP7RO+IljozdLLfSTw==
+remark-lint-no-empty-url@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/remark-lint-no-empty-url/-/remark-lint-no-empty-url-4.0.1.tgz#dc6407b02bb9b8e4f2ce5e61b4976e82a61646b6"
+  integrity sha512-FSQIO+Q63kNNSUfbvvWPz6ES4q1gJIc4aMjohch9bfKwcv6wWZc6UkjlMMi823I124p6onrY/F8KKECv06H5YQ==
   dependencies:
-    unified-lint-rule "^1.0.0"
-    unist-util-generated "^1.1.0"
-    unist-util-visit "^2.0.0"
+    "@types/mdast" "^4.0.0"
+    unified-lint-rule "^3.0.0"
+    unist-util-visit-parents "^6.0.0"
 
 remark-lint-no-file-name-articles@3.0.1:
   version "3.0.1"
@@ -8358,7 +8363,7 @@ remark-lint-no-heading-like-paragraph@4.0.1:
     unist-util-position "^5.0.0"
     unist-util-visit-parents "^6.0.0"
 
-remark-lint-no-heading-punctuation@2.0.1, remark-lint-no-heading-punctuation@^2.0.0:
+remark-lint-no-heading-punctuation@^2.0.0:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/remark-lint-no-heading-punctuation/-/remark-lint-no-heading-punctuation-2.0.1.tgz#face59f9a95c8aa278a8ee0c728bc44cd53ea9ed"
   integrity sha512-lY/eF6GbMeGu4cSuxfGHyvaQQBIq/6T/o+HvAR5UfxSTxmxZFwbZneAI2lbeR1zPcqOU87NsZ5ZZzWVwdLpPBw==
@@ -8367,6 +8372,17 @@ remark-lint-no-heading-punctuation@2.0.1, remark-lint-no-heading-punctuation@^2.
     unified-lint-rule "^1.0.0"
     unist-util-generated "^1.1.0"
     unist-util-visit "^2.0.0"
+
+remark-lint-no-heading-punctuation@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/remark-lint-no-heading-punctuation/-/remark-lint-no-heading-punctuation-4.0.1.tgz#3c8514fb99e26ec07134f8a443ec78bb818b9938"
+  integrity sha512-lpSVFEHPDKGWi8YPeO51xmLNVON5A2cGz0Y8VRkW0f2l6LvEkPTMjQAvA84AQu/10TrxTbIzU/tQlRLpG96QUA==
+  dependencies:
+    "@types/mdast" "^4.0.0"
+    mdast-util-mdx "^3.0.0"
+    mdast-util-to-string "^4.0.0"
+    unified-lint-rule "^3.0.0"
+    unist-util-visit-parents "^6.0.0"
 
 remark-lint-no-hidden-table-cell@1.0.1:
   version "1.0.1"
