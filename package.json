@@ -218,7 +218,7 @@
     "typedoc": "0.28.13",
     "typescript": "5.8.3",
     "vfile-location": "4.0.1",
-    "vfile-message": "2.0.4",
+    "vfile-message": "4.0.3",
     "vfile-reporter": "7.0.1"
   },
   "ava": {
