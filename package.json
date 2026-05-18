@@ -190,7 +190,7 @@
     "tmp": "0.2.5",
     "unified": "9.2.1",
     "unified-engine": "8.2.0",
-    "vfile": "4.2.1"
+    "vfile": "6.0.3"
   },
   "devDependencies": {
     "@types/fs-extra": "9.0.12",
