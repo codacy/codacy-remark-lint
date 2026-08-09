@@ -506,6 +506,13 @@
   dependencies:
     "@types/unist" "^2"
 
+"@types/nlcst@^2.0.0":
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/@types/nlcst/-/nlcst-2.0.3.tgz#31cad346eaab48a9a8a58465d3d05e2530dda762"
+  integrity sha512-vSYNSDe6Ix3q+6Z7ri9lyWqgGhJTmzRjZRqyq15N0Z/1/UnVsno9G/N40NBijoYx2seFDIl0+B2mgAb9mezUCA==
+  dependencies:
+    "@types/unist" "*"
+
 "@types/node@*":
   version "24.5.2"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-24.5.2.tgz#52ceb83f50fe0fcfdfbd2a9fab6db2e9e7ef6446"
@@ -6192,6 +6199,13 @@ nlcst-to-string@^3.0.0:
   dependencies:
     "@types/nlcst" "^1.0.0"
 
+nlcst-to-string@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/nlcst-to-string/-/nlcst-to-string-4.0.0.tgz#05511e8461ebfb415952eb0b7e9a1a7d40471bd4"
+  integrity sha512-YKLBCcUYKAg0FNlOBT6aI91qFmSiFKiluk655WzPF+DDMA02qIyy8uiRqI8QXtcFpEvll12LpL5MXqEmAZ+dcA==
+  dependencies:
+    "@types/nlcst" "^2.0.0"
+
 no-cliches@^0.3.0:
   version "0.3.6"
   resolved "https://registry.yarnpkg.com/no-cliches/-/no-cliches-0.3.6.tgz#50d952c295fae74e3323bde51a045a8107583cad"
@@ -9132,14 +9146,15 @@ retext-profanities@6.1.0:
     pluralize "^8.0.0"
     quotation "^1.0.0"
 
-retext-quotes@4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/retext-quotes/-/retext-quotes-4.0.0.tgz#c2adb2e2582825ab65a25b8b8f81ae2f950b82c8"
-  integrity sha512-YtHJ3Yw0yk8sGp0FMAVWe2a/q0DaHjSKfrAYkO5rZXLofGYYG+LCoqzqlX0tbfae1ImlsqhsLVCuZ0fkUO087g==
+retext-quotes@6.0.2:
+  version "6.0.2"
+  resolved "https://registry.yarnpkg.com/retext-quotes/-/retext-quotes-6.0.2.tgz#c0c7463c3cabcdb46f4c4ed95f1680d326d57da7"
+  integrity sha512-J+JdHDvWDkibjcld7pEag2/rLoIA0NNbqdHfvv0wrpGv6nsYbEy6TKQi5oRcNO6TzgIH5CRQXs2qiwDr/PbP+g==
   dependencies:
-    nlcst-to-string "^2.0.0"
-    unist-util-is "^4.0.0"
-    unist-util-visit "^2.0.0"
+    "@types/nlcst" "^2.0.0"
+    nlcst-to-string "^4.0.0"
+    unist-util-visit "^5.0.0"
+    vfile "^6.0.0"
 
 retext-readability@6.0.0:
   version "6.0.0"
