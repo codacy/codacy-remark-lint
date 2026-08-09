@@ -506,6 +506,13 @@
   dependencies:
     "@types/unist" "^2"
 
+"@types/nlcst@^2.0.0":
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/@types/nlcst/-/nlcst-2.0.3.tgz#31cad346eaab48a9a8a58465d3d05e2530dda762"
+  integrity sha512-vSYNSDe6Ix3q+6Z7ri9lyWqgGhJTmzRjZRqyq15N0Z/1/UnVsno9G/N40NBijoYx2seFDIl0+B2mgAb9mezUCA==
+  dependencies:
+    "@types/unist" "*"
+
 "@types/node@*":
   version "24.5.2"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-24.5.2.tgz#52ceb83f50fe0fcfdfbd2a9fab6db2e9e7ef6446"
@@ -6192,6 +6199,13 @@ nlcst-to-string@^3.0.0:
   dependencies:
     "@types/nlcst" "^1.0.0"
 
+nlcst-to-string@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/nlcst-to-string/-/nlcst-to-string-4.0.0.tgz#05511e8461ebfb415952eb0b7e9a1a7d40471bd4"
+  integrity sha512-YKLBCcUYKAg0FNlOBT6aI91qFmSiFKiluk655WzPF+DDMA02qIyy8uiRqI8QXtcFpEvll12LpL5MXqEmAZ+dcA==
+  dependencies:
+    "@types/nlcst" "^2.0.0"
+
 no-cliches@^0.3.0:
   version "0.3.6"
   resolved "https://registry.yarnpkg.com/no-cliches/-/no-cliches-0.3.6.tgz#50d952c295fae74e3323bde51a045a8107583cad"
@@ -9210,18 +9224,17 @@ retext-stringify@^3.0.0:
     nlcst-to-string "^3.0.0"
     unified "^10.0.0"
 
-retext-syntax-urls@3.1.2:
-  version "3.1.2"
-  resolved "https://registry.yarnpkg.com/retext-syntax-urls/-/retext-syntax-urls-3.1.2.tgz#33185f39bf7d2a17ceb9340c95f803e589c5f726"
-  integrity sha512-CFuqX1x7GPFQRMPTA88bjrD0l8jTN7Y5Zp8QVr9ToWyJRChIMqUlPq4HfOJbKdDfcwhTVZvh/jRyxLc/K6Tc4g==
+retext-syntax-urls@4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/retext-syntax-urls/-/retext-syntax-urls-4.0.0.tgz#a14a0b770583cbfca095d589bf4b66dc92a26042"
+  integrity sha512-mACbwbFiV5L75EtR5C9BTTdGduHmlHee/Pw8GVoukQenue9aTItSAl7yE/OXESIi5UcKED7d/vZDCIefJMcUIQ==
   dependencies:
-    "@types/nlcst" "^1.0.0"
-    "@types/unist" "^2.0.0"
+    "@types/nlcst" "^2.0.0"
     ccount "^2.0.0"
-    nlcst-to-string "^3.0.0"
-    unified "^10.0.0"
-    unist-util-modify-children "^3.0.0"
-    unist-util-position "^4.0.0"
+    nlcst-to-string "^4.0.0"
+    unified "^11.0.0"
+    unist-util-modify-children "^4.0.0"
+    unist-util-position "^5.0.0"
 
 retext-usage@0.5.0:
   version "0.5.0"
@@ -10806,6 +10819,14 @@ unist-util-modify-children@^3.0.0:
   integrity sha512-yXi4Lm+TG5VG+qvokP6tpnk+r1EPwyYL04JWDxLvgvPV40jANh7nm3udk65OOWquvbMDe+PL9+LmkxDpTv/7BA==
   dependencies:
     "@types/unist" "^2.0.0"
+    array-iterate "^2.0.0"
+
+unist-util-modify-children@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/unist-util-modify-children/-/unist-util-modify-children-4.0.0.tgz#981d6308e887b005d1f491811d3cbcc254b315e9"
+  integrity sha512-+tdN5fGNddvsQdIzUF3Xx82CU9sMM+fA0dLgR9vOmT0oPT2jH+P1nd5lSqfCfXAw+93NhcXNY2qqvTUtE4cQkw==
+  dependencies:
+    "@types/unist" "^3.0.0"
     array-iterate "^2.0.0"
 
 unist-util-parents@^3.0.0:
